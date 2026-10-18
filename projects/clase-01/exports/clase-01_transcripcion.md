@@ -1,0 +1,48 @@
+# Transcripción corregida — Cómo aprender inglés desde casa por tu cuenta
+
+Duración final: 307.37 s · tiempos referidos al video final
+
+- `00:00.013` El inglés no se escribe como se pronuncia, ni se pronuncia como se escribe.
+- `00:03.811` Soy maestra de inglés y si estás empezando a estudiar inglés desde casa por ti mismo sin un apoyo como un maestro o algún tipo de curso esto es lo que yo te recomendaría como maestra que hicieras.
+- `00:16.900` Lo primero que deberías hacer es...
+- `00:19.972` familiarizarte con el idioma.
+- `00:22.300` El inglés no es un idioma totalmente fonético, por lo que la escritura va a ser diferente a la pronunciación.
+- `00:30.107` Esto frustra a muchas personas porque como idioma principal que es el español, lo que ves tal cual lo dices, en inglés no es así.
+- `00:37.573` Entonces, ¿qué puedes hacer para familiarizarte con los sonidos?
+- `00:41.893` aprenderte el cuadro IPA, en esto te dicen los cuarenta y cuatro sonidos que tiene el inglés, te los vas aprendiendo.
+- `00:47.776` Vas buscando ejemplos de palabras que tengan estos sonidos para que te vayas familiarizando.
+- `00:52.911` Después de ahí entonces comienzas a construir un vocabulario.
+- `00:56.551` El orden en el que te aprendas el vocabulario muchas veces empieza por la introducción, luego por la edad, identificar cosas, hablar de la familia, de dónde eres, en fin.
+- `01:07.048` Si no te preocupa tener un orden, puedes empezar con algo que te guste a ti, buscar palabras de contenido, es decir, vocabulario, de temas que te interesen a ti o que sean útiles para ti.
+- `01:18.168` Entonces, digamos que a ti te gusta hablar de economía.
+- `01:21.688` Entonces basas tus clases en aprender de economía.
+- `01:25.869` Te vas a apoyar de la IA para que te ayude con las explicaciones de temas, te diga qué vocabulario se trabaja en economía, si es el tema del que quieres hablar, y también te vas usando esas mismas palabras o esas estructuras que aprendes, las vas utilizando junto con los sonidos para que empieces a practicar.
+- `01:47.100` Luego de esto te recomiendo aprender textos y decirlos en voz alta, ya sea frente a un espejo, ya sea grabándote.
+- `01:55.337` Y entonces se lo puedes enviar a la IA en Gemini, tú lo colocas y les dices que te corrijas cualquier error que puedas cometer y que te dé consejos para mejorar.
+- `02:04.315` Si quieres seguir un orden, hay libros de texto online que puedes comprar o que puedes adquirir gratis.
+- `02:09.355` Y ahí te dan un orden de temas que los puedes tomar como referencia y ya después de ahí utiliza tu propio estilo de aprendizaje.
+- `02:17.675` Ya sea viendo videos, que vaya enfocado a eso que estás estudiando.
+- `02:22.044` Cuando estás estudiando un tema debes tomar en cuenta que debes trabajar las cuatro habilidades, que son el listening, escuchar El speaking, hablar, que son esas presentaciones, leer en voz alta, el writing, que es escribir, preferiblemente escribir el vocabulario para acostumbrarte a él, y estructuras que vayan con ese vocabulario.
+- `02:41.907` El vocabulario que va con esta introducción sería Hello, nice to meet you, good afternoon My name is y la estructura es el am, is, are.
+- `02:51.615` Entonces tú dirías: My name is Kristal, I'm thirty years old, y así, esa es la estructura que va.
+- `02:56.757` Entonces combinas el vocabulario con la estructura que podría unirse a este vocabulario.
+- `03:02.733` En este caso, por ejemplo, los saludos más el am, is, are.
+- `03:06.780` O las introducciones más el am, is, are.
+- `03:09.740` Entonces vas a ir uniendo estructuras con cosas relacionadas, con vocabulario relacionado a esa estructura, para que empieces a utilizarla, no solo te quedes en estructura.
+- `03:18.733` Y luego entonces el reading para leer asegúrate de que lo que tu estás leyendo sea lo que estás aprendiendo, sea el mismo vocabulario para que lo puedas poner en contexto.
+- `03:28.467` Y el writing que es escribir.
+- `03:30.501` el reading va primero y luego el writing.
+- `03:32.533` Entonces lees para identificar y hablar en voz alta, leer en voz alta, para practicar la pronunciación, el listening de ti mismo y ver qué tanto vas verdad.
+- `03:42.672` mejorando y el writing entonces que es para escribir oraciones, frases bloques de palabras Y aprender frases en contexto no su traducción, no traducir algo de español a inglés, sino cómo se dice esto in English?
+- `03:56.776` No traducir esto en inglés.
+- `03:58.776` Porque entonces probablemente te dé la respuesta incorrecta.
+- `04:01.769` Y mucho, mucho input.
+- `04:04.044` Búscate una serie que tenga muchas, muchos capítulos, muchas temporadas, y haz eso tu momento para inglés, para la, el reading, porque le vas a poner subtítulos y el listening porque vas a escuchar, vas a adquirir mucho, no importa que no entiendas nada.
+- `04:18.733` Aquí lo importante es ir adecuando el oído, a la rapidez, a la velocidad en la que hablan los norteamericanos o las personas que hablan inglés, y a luego hacerlo de forma como consciente.
+- `04:29.773` enfocándote en esto y ya luego vas a ir aprendiendo por el contexto vas a ir adecuándote y vas a ir entendiendo poquito a poquito más los estudios que estás haciendo.
+- `04:37.967` Escuchar música, escuchar podcast.
+- `04:40.615` Tú tienes que sumergirte en el idioma, tienes que hacerlo por inmersión, por ti mismo.
+- `04:47.284` Si tienes alguien que hable inglés, sería bueno que te acompañe en tu proceso para corrección, para simplemente que hable contigo.
+- `04:55.067` Si no, pues entonces la inteligencia artificial te puede ayudar con eso también.
+- `04:58.424` Puedes hablar con ella, dile que estás aprendiendo y que vas en tal nivel o que es apenas que estás iniciando y que vamos a hablar.
+- `05:05.633` Hope this helps.
