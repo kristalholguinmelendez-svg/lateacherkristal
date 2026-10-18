@@ -115,7 +115,7 @@ def build_audio(tl: Timeline, paths: dict, brand: dict, project: dict, hints: di
         seq.append(f"[c{i}]")
     post, pdesc = A.voice_chain(brand, acfg)
     applied.update(pdesc)
-    fc.append(f"{''.join(seq)}concat=n={len(seq)}:v=0:a=1,{post}[voice]")
+    fc.append(f"{''.join(seq)}concat=n={len(seq)}:v=0:a=1,{post},apad=whole_dur={tl.duration:.6f}[voice]")
     last = "[voice]"
     music = acfg.get("music")
     if music:
@@ -242,6 +242,8 @@ def render(tl: Timeline, paths: dict, infos: dict, faces: dict, looks: dict, zoo
             dec.stdout.close()
             dec.wait()
             log(f"  clip {c.index + 1}/{len(tl.clips)} {src} {a:.2f}-{b:.2f}s [{seg.get('framing')}]")
+        for _ in range(tl.hold_frames):
+            enc.stdin.write(frame.tobytes())
     finally:
         enc.stdin.close()
         rc = enc.wait()

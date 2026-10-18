@@ -32,6 +32,6 @@ completos están en el "MASTER PROMPT" de Kristal; este archivo es el procedimie
 
 - Tipografía Inter (Black/ExtraBold/SemiBold), paleta en `brand/style.json`.
 - Subtítulos: ≤3 palabras, palabra activa en dorado, términos de la lección en rosa.
-- Zonas: cara ~34 % de la altura, gráficos ~58 %, subtítulos ~73 %, nada debajo del 80 %.
+- Zonas: cara ~34 % de la altura, gráficos ~64 %, subtítulos ~78 %, nada debajo del 80 %.
 - Nunca suavizar la piel, alterar facciones ni "inventar" detalle con IA.
 - Los videos (`.mp4`) y modelos no se suben a git; sí el proyecto y los entregables de texto.

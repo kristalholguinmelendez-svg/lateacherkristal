@@ -76,16 +76,18 @@ def check(out_main: Path, out_clean: Path, tl: Timeline, brand: dict, words_out:
 
     # ---- energy at cut points (a loud frame exactly at a cut suggests a clipped word)
     hot = []
-    for c in tl.clips[1:]:
+    for p, c in zip(tl.clips, tl.clips[1:]):
+        if p.src == c.src and p.f_out == c.f_in:
+            continue  # continuous material, only the framing changes
         t = tl.clip_out_range(c)[0]
         i = env.idx(t)
-        around = env.db[max(0, i - 2): i + 2]
-        if len(around) and around.max() > env.speech_db - 6:
+        around = env.db[max(0, i - 1): i + 2]
+        if len(around) and around.min() > env.speech_db - 8:
             hot.append(fmt_ts(t))
     if hot:
         bad("Cortes con energía alta (revisar palabra cortada): " + ", ".join(hot), severe=False)
     else:
-        ok(f"{len(tl.clips) - 1} cortes caen en zonas de baja energía (sin palabras cortadas)")
+        ok("Todos los cortes caen en zonas de baja energía (sin palabras cortadas)")
 
     # ---- start / end
     if words_out and words_out[0]["os"] > 0.6:

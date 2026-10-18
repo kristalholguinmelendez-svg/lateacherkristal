@@ -32,7 +32,7 @@ class Clip:
 
 
 class Timeline:
-    def __init__(self, segments: list[dict], fps: Fraction):
+    def __init__(self, segments: list[dict], fps: Fraction, tail_hold: float = 0.0):
         self.fps = fps
         self.clips: list[Clip] = []
         o = 0
@@ -43,7 +43,9 @@ class Timeline:
                 continue
             self.clips.append(Clip(i, seg["src"], f_in, f_out, o, seg))
             o += f_out - f_in
-        self.frames = o
+        # hold the last frame a moment so the ending breathes instead of feeling cut off
+        self.hold_frames = int(round(tail_hold * fps))
+        self.frames = o + self.hold_frames
 
     @property
     def duration(self) -> float:

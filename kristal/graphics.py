@@ -116,7 +116,7 @@ class G:
             cw, ch, gap = cw_side, (300 if has_tag else 240), 60
             boxes = [((ass.W - 2 * cw - gap) / 2, cy - ch / 2), ((ass.W + gap) / 2, cy - ch / 2)]
         else:
-            cw, ch, gap = 900, (210 if has_tag else 170), 44
+            cw, ch, gap = 900, (180 if has_tag else 140), 30
             boxes = [((ass.W - cw) / 2, cy - ch - gap / 2), ((ass.W - cw) / 2, cy + gap / 2)]
         size = min(ass.fit_size(self.b, "display", w_, cw - pad, max_size) for w_ in words)  # same size: fair contrast
         for k, (x, y) in enumerate(boxes):
@@ -140,9 +140,9 @@ class G:
         x, y, cw, ch, wy, ty, size = geo
         wrong = verdict and st == "wrong"
         border = "correct" if verdict and st == "correct" else None
-        self.card(t0, t1, x, y, cw, ch, delay=delay, alpha=0.62 if wrong else None, border=border,
+        self.card(t0, t1, x, y, cw, ch, delay=delay, alpha=0.86 if wrong else None, border=border,
                   appear=not swap)
-        self.text(t0, t1, x + cw / 2, wy, word, size, "muted" if wrong else "ink", delay=delay,
+        self.text(t0, t1, x + cw / 2, wy, word, size, "wrong" if wrong else "ink", delay=delay,
                   extra="\\s1" if wrong else "", appear=not swap)
         if verdict and tag:
             tsize = ass.fit_size(self.b, "strong", tag.upper(), cw - 50, self.g["label_size"], 26)
@@ -201,7 +201,8 @@ class G:
                                     f"\\fad(0,{self.g['out_ms']})}}{ass.rounded_rect(pw + 16, mh, 10)}", "G", 3))
                     pos += pw
                 pos += space
-            parts = " ".join("".join(f"{{\\1c{ass_rgb(self.c['accent'] if hl else self.c['ink'])}}}{ass.escape(t)}"
+            # highlighted part: dark ink over the gold marker (pink on gold lacks contrast)
+            parts = " ".join("".join(f"{{\\1c{ass_rgb(self.c['ink'])}{'\\b1' if hl else ''}}}{ass.escape(t)}"
                                      for t, hl in wd) for wd in ln)
             self.lines.append(ass.dialogue(t0, t1, f"{{{self.anim(ass.W / 2, ly, an=5)}\\fn{self.b['fonts']['strong']}"
                                            f"\\fs{size}\\bord0\\shad0}}" + parts, "G", 4))

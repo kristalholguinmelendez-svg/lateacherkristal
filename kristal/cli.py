@@ -25,7 +25,7 @@ from . import render as RD
 from . import transcribe as TR
 from .audio import Envelope
 from .timeline import Timeline, normalize_fps
-from .util import fmt_ts, load_brand, log, probe, read_json, require, write_json
+from .util import REPO, fmt_ts, load_brand, log, probe, read_json, require, write_json
 
 MEDIA_EXT = {".mp4", ".mov", ".m4v", ".mkv", ".webm", ".avi", ".mts"}
 
@@ -168,6 +168,13 @@ def cmd_plan(a) -> None:
     trs = transcripts(pdir, project)
     envs = AN.load_envelopes(project, paths)
     segs = AN.plan_to_segments(project["plan"], trs, envs)
+    model_dir = project.get("asr_model_dir")
+    if model_dir and (Path(model_dir) if Path(model_dir).is_absolute() else REPO / model_dir).exists():
+        from .verify import EdgeRefiner
+        log("Verificando cada borde de corte con el reconocedor ...")
+        md = Path(model_dir) if Path(model_dir).is_absolute() else REPO / model_dir
+        for line in EdgeRefiner(paths, md, envs).refine(segs):
+            log("  ajuste " + line)
     project["segments"] = segs
     if "audio_hints" not in project:
         project["audio_hints"] = {src: {"noise_db": round(e.noise_db, 1), "speech_db": round(e.speech_db, 1),
@@ -176,7 +183,11 @@ def cmd_plan(a) -> None:
     tl = Timeline(segs, normalize_fps(probe(next(iter(paths.values())))["video"]["fps_float"]))
     t = 0.0
     for n, sg in enumerate(segs):
-        print(f"{n + 1:3d} {fmt_ts(t)} {sg['src']} {sg['in']:7.2f}-{sg['out']:7.2f} [{sg['role']}/{sg['framing']}] {sg['text']}")
+        env = envs[sg["src"]]
+        hot = lambda x: env.db[env.idx(x)] > env.noise_db + AN.SPEECH_MARGIN_DB + 4
+        flag = ("⚠in " if hot(sg["in"]) else "") + ("⚠out" if hot(sg["out"]) else "")
+        print(f"{n + 1:3d} {fmt_ts(t)} {sg['src']} {sg['in']:7.2f}-{sg['out']:7.2f} "
+              f"[{sg['role']}/{sg['framing']}] {flag} {sg['text']}")
         t += sg["out"] - sg["in"]
     log(f"{len(segs)} segmentos · duración {tl.duration:.1f}s")
 
@@ -204,7 +215,7 @@ def cmd_render(a) -> None:
     infos = {src: probe(p) for src, p in paths.items()}
     first = infos[project["segments"][0]["src"]]["video"]
     fps = normalize_fps(project.get("output", {}).get("fps") or first["fps_float"])
-    tl = Timeline(project["segments"], fps)
+    tl = Timeline(project["segments"], fps, project.get("output", {}).get("tail_hold", 0.0))
     log(f"Línea de tiempo: {len(tl.clips)} cortes, {tl.duration:.2f}s @ {float(fps):.3f} fps")
     work = pdir / "work"
     exp = pdir / "exports"

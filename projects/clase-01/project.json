@@ -55,7 +55,7 @@
     {
       "src": "A",
       "in": 36.58,
-      "out": 40.34,
+      "out": 40.36,
       "role": "hook",
       "framing": "close",
       "text": "El inglés no se escribe como se pronuncia, ni se pronuncia como se escribe.",
@@ -63,8 +63,8 @@
     },
     {
       "src": "A",
-      "in": 0.43,
-      "out": 10.26,
+      "in": 0.64,
+      "out": 10.02,
       "role": "curiosity",
       "framing": "medium",
       "text": "Soy maestra de inglés y si estás empezando a estudiar inglés desde casa por ti mismo sin un apoyo como un maestro o algún tipo de curso",
@@ -72,8 +72,8 @@
     },
     {
       "src": "A",
-      "in": 10.96,
-      "out": 14.8,
+      "in": 11.01,
+      "out": 14.71,
       "role": "curiosity",
       "framing": "wide",
       "text": "esto es lo que yo te recomendaría como maestra que hicieras.",
@@ -81,8 +81,8 @@
     },
     {
       "src": "A",
-      "in": 14.8,
-      "out": 20.28,
+      "in": 14.9,
+      "out": 20.285,
       "role": "explanation",
       "framing": "medium",
       "text": "Lo primero que deberías hacer es... familiarizarte con el idioma.",
@@ -90,8 +90,8 @@
     },
     {
       "src": "A",
-      "in": 20.292,
-      "out": 25.26,
+      "in": 20.285,
+      "out": 25.05,
       "role": "explanation",
       "framing": "wide",
       "text": "El inglés no es un idioma totalmente fonético, por lo que",
@@ -99,8 +99,8 @@
     },
     {
       "src": "A",
-      "in": 25.9,
-      "out": 29.13,
+      "in": 26.05,
+      "out": 29.11,
       "role": "explanation",
       "framing": "medium",
       "text": "la escritura va a ser diferente a la pronunciación.",
@@ -108,8 +108,8 @@
     },
     {
       "src": "A",
-      "in": 29.13,
-      "out": 36.58,
+      "in": 29.14,
+      "out": 36.6,
       "role": "explanation",
       "framing": "medium",
       "text": "Esto frustra a muchas personas porque como idioma principal que es el español, lo que ves tal cual lo dices, en inglés no es así.",
@@ -117,17 +117,18 @@
     },
     {
       "src": "A",
-      "in": 40.37,
-      "out": 45.89,
+      "in": 40.34,
+      "out": 45.91,
       "role": "explanation",
       "framing": "close",
       "text": "Entonces, ¿qué puedes hacer para familiarizarte con los sonidos? aprenderte el cuadro IPA,",
-      "phrase": "b07"
+      "phrase": "b07",
+      "lock_out": true
     },
     {
       "src": "A",
-      "in": 48.65,
-      "out": 53.705,
+      "in": 48.82,
+      "out": 53.48,
       "role": "explanation",
       "framing": "medium",
       "text": "en esto te dicen los cuarenta y cuatro sonidos que tiene el inglés, te los vas aprendiendo.",
@@ -135,8 +136,8 @@
     },
     {
       "src": "A",
-      "in": 53.705,
-      "out": 55.55,
+      "in": 53.876,
+      "out": 55.58,
       "role": "explanation",
       "framing": "wide",
       "text": "Vas buscando ejemplos",
@@ -144,8 +145,8 @@
     },
     {
       "src": "A",
-      "in": 55.85,
-      "out": 59.333,
+      "in": 55.83,
+      "out": 59.26,
       "role": "explanation",
       "framing": "medium",
       "text": "de palabras que tengan estos sonidos para que te vayas familiarizando.",
@@ -153,8 +154,8 @@
     },
     {
       "src": "A",
-      "in": 59.333,
-      "out": 63.19,
+      "in": 59.44,
+      "out": 63.06,
       "role": "explanation",
       "framing": "close",
       "text": "Después de ahí entonces comienzas a construir un vocabulario.",
@@ -162,8 +163,8 @@
     },
     {
       "src": "A",
-      "in": 63.19,
-      "out": 73.75,
+      "in": 63.25,
+      "out": 73.764,
       "role": "explanation",
       "framing": "wide",
       "text": "El orden en el que te aprendas el vocabulario muchas veces empieza por la introducción, luego por la edad, identificar cosas, hablar de la familia, de dónde eres, en fin.",
@@ -171,8 +172,8 @@
     },
     {
       "src": "A",
-      "in": 75.17,
-      "out": 86.468,
+      "in": 75.348,
+      "out": 86.479,
       "role": "explanation",
       "framing": "medium",
       "text": "Si no te preocupa tener un orden, puedes empezar con algo que te guste a ti, buscar palabras de contenido, es decir, vocabulario, de temas que te interesen a ti o que sean útiles para ti.",
@@ -180,8 +181,8 @@
     },
     {
       "src": "A",
-      "in": 86.47,
-      "out": 94.356,
+      "in": 86.479,
+      "out": 94.17,
       "role": "explanation",
       "framing": "close",
       "text": "Entonces, digamos que a ti te gusta hablar de economía. Entonces basas tus clases en aprender de economía.",
@@ -189,8 +190,8 @@
     },
     {
       "src": "A",
-      "in": 98.7,
-      "out": 110.97,
+      "in": 98.836,
+      "out": 110.968,
       "role": "explanation",
       "framing": "medium",
       "text": "Te vas a apoyar de la IA para que te ayude con las explicaciones de temas, te diga qué vocabulario se trabaja en economía, si es el tema del que quieres hablar,",
@@ -198,8 +199,8 @@
     },
     {
       "src": "A",
-      "in": 110.996,
-      "out": 120.28,
+      "in": 110.968,
+      "out": 120.06,
       "role": "explanation",
       "framing": "wide",
       "text": "y también te vas usando esas mismas palabras o esas estructuras que aprendes, las vas utilizando junto con los sonidos para que empieces a practicar.",
@@ -207,8 +208,8 @@
     },
     {
       "src": "A",
-      "in": 120.38,
-      "out": 128.804,
+      "in": 120.56,
+      "out": 128.81,
       "role": "explanation",
       "framing": "close",
       "text": "Luego de esto te recomiendo aprender textos y decirlos en voz alta, ya sea frente a un espejo, ya sea grabándote.",
@@ -216,8 +217,8 @@
     },
     {
       "src": "A",
-      "in": 128.82,
-      "out": 138.0,
+      "in": 128.81,
+      "out": 137.78,
       "role": "explanation",
       "framing": "medium",
       "text": "Y entonces se lo puedes enviar a la IA en Gemini, tú lo colocas y les dices que te corrijas cualquier error que puedas cometer y que te dé consejos para mejorar.",
@@ -225,8 +226,8 @@
     },
     {
       "src": "A",
-      "in": 138.33,
-      "out": 148.148,
+      "in": 138.548,
+      "out": 148.174,
       "role": "explanation",
       "framing": "wide",
       "text": "Si quieres seguir un orden, hay libros de texto online que puedes comprar o que puedes adquirir gratis. Y ahí te dan un orden de temas que los puedes tomar como referencia",
@@ -234,8 +235,8 @@
     },
     {
       "src": "A",
-      "in": 148.17,
-      "out": 153.108,
+      "in": 148.174,
+      "out": 153.11,
       "role": "explanation",
       "framing": "medium",
       "text": "y ya después de ahí utiliza tu propio estilo de aprendizaje. Ya sea viendo videos,",
@@ -243,8 +244,8 @@
     },
     {
       "src": "B",
-      "in": 5.04,
-      "out": 8.28,
+      "in": 5.16,
+      "out": 8.34,
       "role": "explanation",
       "framing": "close",
       "text": "que vaya enfocado a eso que estás estudiando.",
@@ -252,8 +253,8 @@
     },
     {
       "src": "B",
-      "in": 9.044,
-      "out": 16.29,
+      "in": 9.04,
+      "out": 16.13,
       "role": "explanation",
       "framing": "wide",
       "text": "Cuando estás estudiando un tema debes tomar en cuenta que debes trabajar las cuatro habilidades, que son el listening, escuchar",
@@ -261,8 +262,8 @@
     },
     {
       "src": "B",
-      "in": 16.29,
-      "out": 29.236,
+      "in": 16.41,
+      "out": 29.18,
       "role": "explanation",
       "framing": "medium",
       "text": "El speaking, hablar, que son esas presentaciones, leer en voz alta, el writing, que es escribir, preferiblemente escribir el vocabulario para acostumbrarte a él, y estructuras que vayan con ese vocabulario.",
@@ -270,26 +271,8 @@
     },
     {
       "src": "B",
-      "in": 29.236,
-      "out": 29.796,
-      "role": "explanation",
-      "framing": "close",
-      "text": "Por ejemplo,",
-      "phrase": "b24"
-    },
-    {
-      "src": "B",
-      "in": 33.67,
-      "out": 34.708,
-      "role": "explanation",
-      "framing": "medium",
-      "text": "la introducción.",
-      "phrase": "b24"
-    },
-    {
-      "src": "B",
-      "in": 34.708,
-      "out": 39.78,
+      "in": 34.72,
+      "out": 39.8,
       "role": "explanation",
       "framing": "wide",
       "text": "El vocabulario que va con esta introducción sería Hello, nice to meet you,",
@@ -297,8 +280,8 @@
     },
     {
       "src": "B",
-      "in": 40.35,
-      "out": 41.8,
+      "in": 40.57,
+      "out": 41.71,
       "role": "explanation",
       "framing": "medium",
       "text": "good afternoon",
@@ -306,8 +289,8 @@
     },
     {
       "src": "B",
-      "in": 42.23,
-      "out": 46.072,
+      "in": 42.48,
+      "out": 45.96,
       "role": "explanation",
       "framing": "wide",
       "text": "My name is y la estructura es el am, is, are.",
@@ -315,8 +298,8 @@
     },
     {
       "src": "B",
-      "in": 46.072,
-      "out": 46.97,
+      "in": 46.148,
+      "out": 46.96,
       "role": "explanation",
       "framing": "close",
       "text": "Entonces tú dirías:",
@@ -324,8 +307,8 @@
     },
     {
       "src": "B",
-      "in": 51.28,
-      "out": 54.04,
+      "in": 51.52,
+      "out": 54.1,
       "role": "explanation",
       "framing": "medium",
       "text": "My name is Kristal, I'm thirty years old,",
@@ -333,8 +316,8 @@
     },
     {
       "src": "B",
-      "in": 54.244,
-      "out": 62.065,
+      "in": 54.39,
+      "out": 62.125,
       "role": "explanation",
       "framing": "wide",
       "text": "y así, esa es la estructura que va. Entonces combinas el vocabulario con la estructura que podría unirse a este vocabulario.",
@@ -342,8 +325,8 @@
     },
     {
       "src": "B",
-      "in": 62.065,
-      "out": 69.11,
+      "in": 62.125,
+      "out": 69.08,
       "role": "explanation",
       "framing": "medium",
       "text": "En este caso, por ejemplo, los saludos más el am, is, are. O las introducciones más el am, is, are.",
@@ -351,8 +334,8 @@
     },
     {
       "src": "B",
-      "in": 69.11,
-      "out": 78.116,
+      "in": 69.08,
+      "out": 78.128,
       "role": "explanation",
       "framing": "close",
       "text": "Entonces vas a ir uniendo estructuras con cosas relacionadas, con vocabulario relacionado a esa estructura, para que empieces a utilizarla, no solo te quedes en estructura.",
@@ -360,8 +343,8 @@
     },
     {
       "src": "B",
-      "in": 78.15,
-      "out": 81.58,
+      "in": 78.128,
+      "out": 81.59,
       "role": "explanation",
       "framing": "wide",
       "text": "Y luego entonces el reading para leer",
@@ -369,8 +352,8 @@
     },
     {
       "src": "B",
-      "in": 82.64,
-      "out": 88.996,
+      "in": 82.72,
+      "out": 89.008,
       "role": "explanation",
       "framing": "medium",
       "text": "asegúrate de que lo que tu estás leyendo sea lo que estás aprendiendo, sea el mismo vocabulario para que lo puedas poner en contexto.",
@@ -378,8 +361,8 @@
     },
     {
       "src": "B",
-      "in": 89.05,
-      "out": 91.24,
+      "in": 89.008,
+      "out": 91.02,
       "role": "explanation",
       "framing": "medium",
       "text": "Y el writing que es escribir.",
@@ -387,8 +370,8 @@
     },
     {
       "src": "B",
-      "in": 92.068,
-      "out": 94.15,
+      "in": 92.06,
+      "out": 94.09,
       "role": "explanation",
       "framing": "close",
       "text": "el reading va primero y luego el writing.",
@@ -396,35 +379,26 @@
     },
     {
       "src": "B",
-      "in": 94.15,
-      "out": 95.908,
+      "in": 94.228,
+      "out": 104.33,
       "role": "explanation",
       "framing": "close",
-      "text": "Entonces lees para identificar",
+      "text": "Entonces lees para identificar y hablar en voz alta, leer en voz alta, para practicar la pronunciación, el listening de ti mismo y ver qué tanto vas verdad.",
       "phrase": "b33"
     },
     {
       "src": "B",
-      "in": 97.188,
-      "out": 103.61,
+      "in": 104.73,
+      "out": 105.405,
       "role": "explanation",
       "framing": "medium",
-      "text": "leer en voz alta, para practicar la pronunciación, el listening de ti mismo y ver qué tanto vas",
-      "phrase": "b33"
-    },
-    {
-      "src": "B",
-      "in": 104.612,
-      "out": 105.332,
-      "role": "explanation",
-      "framing": "close",
       "text": "mejorando",
       "phrase": "b33"
     },
     {
       "src": "B",
-      "in": 105.332,
-      "out": 111.49,
+      "in": 105.405,
+      "out": 111.39,
       "role": "explanation",
       "framing": "wide",
       "text": "y el writing entonces que es para escribir oraciones, frases bloques de palabras",
@@ -432,8 +406,8 @@
     },
     {
       "src": "B",
-      "in": 111.49,
-      "out": 119.29,
+      "in": 111.636,
+      "out": 119.06,
       "role": "explanation",
       "framing": "medium",
       "text": "Y aprender frases en contexto no su traducción, no traducir algo de español a inglés, sino cómo se dice esto in English?",
@@ -441,17 +415,18 @@
     },
     {
       "src": "B",
-      "in": 119.29,
-      "out": 124.436,
+      "in": 119.42,
+      "out": 124.47,
       "role": "explanation",
       "framing": "close",
       "text": "No traducir esto en inglés. Porque entonces probablemente te dé la respuesta incorrecta.",
-      "phrase": "b36"
+      "phrase": "b36",
+      "lock_out": true
     },
     {
       "src": "B",
-      "in": 128.24,
-      "out": 130.676,
+      "in": 128.436,
+      "out": 130.7,
       "role": "explanation",
       "framing": "wide",
       "text": "Y mucho, mucho input.",
@@ -459,26 +434,17 @@
     },
     {
       "src": "B",
-      "in": 131.716,
-      "out": 133.204,
+      "in": 131.84,
+      "out": 138.1,
       "role": "explanation",
       "framing": "medium",
-      "text": "Búscate una serie que tenga",
+      "text": "Búscate una serie que tenga muchas, muchos capítulos, muchas temporadas, y haz eso tu momento para inglés,",
       "phrase": "b38"
     },
     {
       "src": "B",
-      "in": 133.65,
-      "out": 138.05,
-      "role": "explanation",
-      "framing": "close",
-      "text": "muchos capítulos, muchas temporadas, y haz eso tu momento para inglés,",
-      "phrase": "b38"
-    },
-    {
-      "src": "B",
-      "in": 138.484,
-      "out": 146.88,
+      "in": 138.48,
+      "out": 146.89,
       "role": "explanation",
       "framing": "wide",
       "text": "para la, el reading, porque le vas a poner subtítulos y el listening porque vas a escuchar, vas a adquirir mucho, no importa que no entiendas nada.",
@@ -486,8 +452,8 @@
     },
     {
       "src": "B",
-      "in": 146.884,
-      "out": 158.14,
+      "in": 146.89,
+      "out": 157.94,
       "role": "explanation",
       "framing": "wide",
       "text": "Aquí lo importante es ir adecuando el oído, a la rapidez, a la velocidad en la que hablan los norteamericanos o las personas que hablan inglés, y a luego hacerlo de forma como consciente.",
@@ -495,8 +461,8 @@
     },
     {
       "src": "B",
-      "in": 158.14,
-      "out": 166.655,
+      "in": 158.34,
+      "out": 166.52,
       "role": "explanation",
       "framing": "medium",
       "text": "enfocándote en esto y ya luego vas a ir aprendiendo por el contexto vas a ir adecuándote y vas a ir entendiendo poquito a poquito más los estudios que estás haciendo.",
@@ -504,8 +470,8 @@
     },
     {
       "src": "B",
-      "in": 166.655,
-      "out": 176.19,
+      "in": 166.82,
+      "out": 176.14,
       "role": "explanation",
       "framing": "close",
       "text": "Escuchar música, escuchar podcast. Tú tienes que sumergirte en el idioma, tienes que hacerlo por inmersión, por ti mismo.",
@@ -513,8 +479,8 @@
     },
     {
       "src": "B",
-      "in": 177.524,
-      "out": 185.655,
+      "in": 177.68,
+      "out": 185.46,
       "role": "explanation",
       "framing": "wide",
       "text": "Si tienes alguien que hable inglés, sería bueno que te acompañe en tu proceso para corrección, para simplemente que hable contigo.",
@@ -522,8 +488,8 @@
     },
     {
       "src": "B",
-      "in": 185.655,
-      "out": 196.53,
+      "in": 185.76,
+      "out": 196.34,
       "role": "explanation",
       "framing": "medium",
       "text": "Si no, pues entonces la inteligencia artificial te puede ayudar con eso también. Puedes hablar con ella, dile que estás aprendiendo y que vas en tal nivel o que es apenas que estás iniciando y que vamos a hablar.",
@@ -531,8 +497,8 @@
     },
     {
       "src": "B",
-      "in": 201.19,
-      "out": 202.64,
+      "in": 201.396,
+      "out": 202.62,
       "role": "payoff",
       "framing": "close",
       "text": "Hope this helps.",
@@ -772,7 +738,7 @@
       "type": "word",
       "src": "B",
       "start": 129.1,
-      "end": 130.1,
+      "end": 133.2,
       "word": "INPUT",
       "label": "mucho, mucho"
     },
@@ -971,7 +937,9 @@
       "from": 40.3,
       "to": 45.6,
       "role": "explanation",
-      "framing": "close"
+      "framing": "close",
+      "out": 45.91,
+      "note": "IPA: el reconocedor no la transcribe; borde fijado en el valle entre 'IPA' y 'que'"
     },
     {
       "id": "b08",
@@ -1102,20 +1070,6 @@
       "framing": "medium"
     },
     {
-      "id": "b24",
-      "src": "B",
-      "from": 29.32,
-      "to": 33.85,
-      "role": "explanation",
-      "framing": "close",
-      "skip": [
-        [
-          29.75,
-          33.05
-        ]
-      ]
-    },
-    {
       "id": "b25",
       "src": "B",
       "from": 34.74,
@@ -1212,11 +1166,7 @@
       "framing": "close",
       "skip": [
         [
-          95.88,
-          96.82
-        ],
-        [
-          103.6,
+          104.4,
           104.5
         ]
       ]
@@ -1243,7 +1193,8 @@
       "from": 119.48,
       "to": 123.95,
       "role": "explanation",
-      "framing": "close"
+      "framing": "close",
+      "out": 124.47
     },
     {
       "id": "b37",
@@ -1259,13 +1210,7 @@
       "from": 131.84,
       "to": 137.6,
       "role": "explanation",
-      "framing": "medium",
-      "skip": [
-        [
-          133.18,
-          133.25
-        ]
-      ]
+      "framing": "medium"
     },
     {
       "id": "b39",
@@ -1331,5 +1276,9 @@
       "punch": 0.06,
       "max_upscale": 2.3
     }
+  },
+  "asr_model_dir": "assets/models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+  "output": {
+    "tail_hold": 0.5
   }
 }

@@ -374,6 +374,53 @@ def load_envelopes(project: dict, footage_paths: dict) -> dict[str, Envelope]:
 
 # ---------------------------------------------------------------- editor's plan -> precise segments
 
+PRE_ROLL, POST_ROLL = 0.07, 0.10   # breathing room around real speech
+SPEECH_MARGIN_DB = 9.0             # frames this far above the noise floor count as voice
+
+
+def _smooth(env, i0: int, i1: int):
+    import numpy as np
+    seg = env.db[max(0, i0 - 2): i1 + 3]
+    k = np.ones(3) / 3
+    return np.convolve(seg, k, mode="same")[2: 2 + (i1 - i0) + 1] if len(seg) > 4 else env.db[i0:i1 + 1]
+
+
+def speech_onset(env, w: dict, prev: dict | None) -> float:
+    """Real start of the voice for word w (ASR timestamps lag by up to ~0.3 s).
+
+    Walks back from the ASR start to the first quiet frame; in connected speech (no quiet
+    frame before the previous word) returns the energy valley between the two words.
+    """
+    import numpy as np
+    lo_t = (prev["s"] + 0.5 * (prev["e"] - prev["s"])) if prev else w["s"] - 0.5
+    lo_t = max(lo_t, w["s"] - 0.5, 0.0)
+    i0, i1 = env.idx(lo_t), env.idx(w["s"] + 0.06)
+    if i1 <= i0:
+        return w["s"]
+    sm = _smooth(env, i0, i1)
+    thr = env.noise_db + SPEECH_MARGIN_DB
+    quiet = np.flatnonzero(sm < thr)
+    if len(quiet):
+        return (i0 + quiet[-1] + 1) * 0.01
+    return (i0 + int(np.argmin(sm))) * 0.01
+
+
+def speech_offset(env, w: dict, nxt: dict | None, end_limit: float) -> float:
+    """Real end of the voice for word w (walks forward to the first quiet frame)."""
+    import numpy as np
+    hi_t = nxt["s"] + 0.05 if nxt else w["e"] + 0.6
+    hi_t = min(hi_t, w["e"] + 0.6, end_limit)
+    i0, i1 = env.idx(max(w["s"] + 0.05, w["e"] - 0.08)), env.idx(hi_t)
+    if i1 <= i0:
+        return w["e"]
+    sm = _smooth(env, i0, i1)
+    thr = env.noise_db + SPEECH_MARGIN_DB
+    quiet = np.flatnonzero(sm < thr)
+    if len(quiet):
+        return (i0 + quiet[0]) * 0.01
+    return (i0 + int(np.argmin(sm))) * 0.01
+
+
 ALT_FRAMING = {"wide": "medium", "medium": "close", "close": "medium"}
 
 
@@ -408,14 +455,18 @@ def plan_to_segments(plan: list[dict], transcripts: dict[str, dict], envs: dict,
             first, last = words[r[0]], words[r[-1]]
             prev = words[r[0] - 1] if r[0] > 0 else None
             nxt = words[r[-1] + 1] if r[-1] + 1 < len(words) else None
-            lo = prev["e"] if prev else 0.0
-            hi = nxt["s"] if nxt else (env.duration if env else last["e"] + 1)
-            pre = min(keep_gap / 2 + 0.04, max(0.0, first["s"] - lo))
-            post = min(keep_gap / 2 + 0.10, max(0.0, hi - last["e"]))
-            t_in, t_out = first["s"] - pre, last["e"] + post
+            end_limit = env.duration if env else last["e"] + 1
             if env:
-                t_in = max(lo, env.snap(t_in, window=0.06))
-                t_out = min(hi, env.snap(t_out, window=0.06))
+                t_in = speech_onset(env, first, prev) - PRE_ROLL
+                t_out = speech_offset(env, last, nxt, end_limit) + POST_ROLL
+                if prev is not None:
+                    t_in = max(t_in, speech_offset(env, prev, first, end_limit) + 0.02)
+                if nxt is not None:
+                    t_out = min(t_out, speech_onset(env, nxt, last) - 0.02)
+                t_in = min(t_in, first["s"])
+                t_out = min(max(t_out, last["e"]), end_limit)
+            else:
+                t_in, t_out = first["s"] - 0.12, last["e"] + 0.15
             seg = {"src": src, "in": round(max(0.0, t_in), 3), "out": round(t_out, 3),
                    "role": item.get("role", "explanation"),
                    # alternate the shot on every internal cut so jump cuts read as intentional reframes
@@ -424,6 +475,11 @@ def plan_to_segments(plan: list[dict], transcripts: dict[str, dict], envs: dict,
             for k in ("punch_scale", "push"):
                 if k in item:
                     seg[k] = item[k]
+            # editor-fixed edges (verified by ear/recogniser) win over automatic placement
+            if "in" in item and r is runs_[0]:
+                seg["in"], seg["lock_in"] = item["in"], True
+            if "out" in item and r is runs_[-1]:
+                seg["out"], seg["lock_out"] = item["out"], True
             out.append(seg)
     # contiguous material from the same take: cut at one shared point (a pure reframe,
     # no repeated or skipped audio)
