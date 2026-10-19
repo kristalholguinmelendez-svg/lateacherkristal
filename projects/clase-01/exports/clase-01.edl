@@ -1,0 +1,202 @@
+TITLE: clase-01
+FCM: NON-DROP FRAME
+
+001  TOMA1    AA/V  C        00:00:36:17 00:00:40:11 00:00:00:00 00:00:03:24
+* FROM CLIP NAME: toma1.mov
+* COMMENT: El inglés no se escribe como se pronuncia, ni se pronuncia como se esc
+
+002  TOMA1    AA/V  C        00:00:00:19 00:00:10:01 00:00:03:24 00:00:13:06
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Soy maestra de inglés y si estás empezando a estudiar inglés desde cas
+
+003  TOMA1    AA/V  C        00:00:11:00 00:00:14:21 00:00:13:06 00:00:16:27
+* FROM CLIP NAME: toma1.mov
+* COMMENT: esto es lo que yo te recomendaría como maestra que hicieras.
+
+004  TOMA1    AA/V  C        00:00:14:27 00:00:20:09 00:00:16:27 00:00:22:09
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Lo primero que deberías hacer es... familiarizarte con el idioma.
+
+005  TOMA1    AA/V  C        00:00:20:09 00:00:25:02 00:00:22:09 00:00:27:02
+* FROM CLIP NAME: toma1.mov
+* COMMENT: El inglés no es un idioma totalmente fonético, por lo que
+
+006  TOMA1    AA/V  C        00:00:26:02 00:00:29:03 00:00:27:02 00:00:30:03
+* FROM CLIP NAME: toma1.mov
+* COMMENT: la escritura va a ser diferente a la pronunciación.
+
+007  TOMA1    AA/V  C        00:00:29:04 00:00:36:18 00:00:30:03 00:00:37:17
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Esto frustra a muchas personas porque como idioma principal que es el 
+
+008  TOMA1    AA/V  C        00:00:40:10 00:00:45:27 00:00:37:17 00:00:43:04
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Entonces, ¿qué puedes hacer para familiarizarte con los sonidos? apren
+
+009  TOMA1    AA/V  C        00:00:48:25 00:00:53:14 00:00:43:04 00:00:47:23
+* FROM CLIP NAME: toma1.mov
+* COMMENT: en esto te dicen los cuarenta y cuatro sonidos que tiene el inglés, te
+
+010  TOMA1    AA/V  C        00:00:53:26 00:00:55:17 00:00:47:23 00:00:49:14
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Vas buscando ejemplos
+
+011  TOMA1    AA/V  C        00:00:55:25 00:00:59:08 00:00:49:14 00:00:52:27
+* FROM CLIP NAME: toma1.mov
+* COMMENT: de palabras que tengan estos sonidos para que te vayas familiarizando.
+
+012  TOMA1    AA/V  C        00:00:59:13 00:01:03:02 00:00:52:27 00:00:56:16
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Después de ahí entonces comienzas a construir un vocabulario.
+
+013  TOMA1    AA/V  C        00:01:03:08 00:01:13:23 00:00:56:16 00:01:07:01
+* FROM CLIP NAME: toma1.mov
+* COMMENT: El orden en el que te aprendas el vocabulario muchas veces empieza por
+
+014  TOMA1    AA/V  C        00:01:15:10 00:01:26:14 00:01:07:01 00:01:18:05
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Si no te preocupa tener un orden, puedes empezar con algo que te guste
+
+015  TOMA1    AA/V  C        00:01:26:14 00:01:34:05 00:01:18:05 00:01:25:26
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Entonces, digamos que a ti te gusta hablar de economía. Entonces basas
+
+016  TOMA1    AA/V  C        00:01:38:25 00:01:50:29 00:01:25:26 00:01:38:00
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Te vas a apoyar de la IA para que te ayude con las explicaciones de te
+
+017  TOMA1    AA/V  C        00:01:50:29 00:02:00:02 00:01:38:00 00:01:47:03
+* FROM CLIP NAME: toma1.mov
+* COMMENT: y también te vas usando esas mismas palabras o esas estructuras que ap
+
+018  TOMA1    AA/V  C        00:02:00:17 00:02:08:24 00:01:47:03 00:01:55:10
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Luego de esto te recomiendo aprender textos y decirlos en voz alta, ya
+
+019  TOMA1    AA/V  C        00:02:08:24 00:02:17:23 00:01:55:10 00:02:04:09
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Y entonces se lo puedes enviar a la IA en Gemini, tú lo colocas y les 
+
+020  TOMA1    AA/V  C        00:02:18:16 00:02:28:05 00:02:04:09 00:02:13:28
+* FROM CLIP NAME: toma1.mov
+* COMMENT: Si quieres seguir un orden, hay libros de texto online que puedes comp
+
+021  TOMA1    AA/V  C        00:02:28:05 00:02:33:03 00:02:13:28 00:02:18:26
+* FROM CLIP NAME: toma1.mov
+* COMMENT: y ya después de ahí utiliza tu propio estilo de aprendizaje. Ya sea vi
+
+022  TOMA2    AA/V  C        00:00:05:05 00:00:08:10 00:02:18:26 00:02:22:01
+* FROM CLIP NAME: toma2.mov
+* COMMENT: que vaya enfocado a eso que estás estudiando.
+
+023  TOMA2    AA/V  C        00:00:09:01 00:00:16:04 00:02:22:01 00:02:29:04
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Cuando estás estudiando un tema debes tomar en cuenta que debes trabaj
+
+024  TOMA2    AA/V  C        00:00:16:12 00:00:29:05 00:02:29:04 00:02:41:27
+* FROM CLIP NAME: toma2.mov
+* COMMENT: El speaking, hablar, que son esas presentaciones, leer en voz alta, el
+
+025  TOMA2    AA/V  C        00:00:34:22 00:00:39:24 00:02:41:27 00:02:46:29
+* FROM CLIP NAME: toma2.mov
+* COMMENT: El vocabulario que va con esta introducción sería Hello, nice to meet 
+
+026  TOMA2    AA/V  C        00:00:40:17 00:00:41:21 00:02:46:29 00:02:48:03
+* FROM CLIP NAME: toma2.mov
+* COMMENT: good afternoon
+
+027  TOMA2    AA/V  C        00:00:42:14 00:00:45:29 00:02:48:03 00:02:51:18
+* FROM CLIP NAME: toma2.mov
+* COMMENT: My name is y la estructura es el am, is, are.
+
+028  TOMA2    AA/V  C        00:00:46:04 00:00:46:29 00:02:51:18 00:02:52:13
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Entonces tú dirías:
+
+029  TOMA2    AA/V  C        00:00:51:16 00:00:54:03 00:02:52:13 00:02:55:00
+* FROM CLIP NAME: toma2.mov
+* COMMENT: My name is Kristal, I'm thirty years old,
+
+030  TOMA2    AA/V  C        00:00:54:12 00:01:02:04 00:02:55:00 00:03:02:22
+* FROM CLIP NAME: toma2.mov
+* COMMENT: y así, esa es la estructura que va. Entonces combinas el vocabulario c
+
+031  TOMA2    AA/V  C        00:01:02:04 00:01:09:02 00:03:02:22 00:03:09:20
+* FROM CLIP NAME: toma2.mov
+* COMMENT: En este caso, por ejemplo, los saludos más el am, is, are. O las intro
+
+032  TOMA2    AA/V  C        00:01:09:02 00:01:18:04 00:03:09:20 00:03:18:22
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Entonces vas a ir uniendo estructuras con cosas relacionadas, con voca
+
+033  TOMA2    AA/V  C        00:01:18:04 00:01:21:18 00:03:18:22 00:03:22:06
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Y luego entonces el reading para leer
+
+034  TOMA2    AA/V  C        00:01:22:22 00:01:29:00 00:03:22:06 00:03:28:14
+* FROM CLIP NAME: toma2.mov
+* COMMENT: asegúrate de que lo que tu estás leyendo sea lo que estás aprendiendo,
+
+035  TOMA2    AA/V  C        00:01:29:00 00:01:31:01 00:03:28:14 00:03:30:15
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Y el writing que es escribir.
+
+036  TOMA2    AA/V  C        00:01:32:02 00:01:34:03 00:03:30:15 00:03:32:16
+* FROM CLIP NAME: toma2.mov
+* COMMENT: el reading va primero y luego el writing.
+
+037  TOMA2    AA/V  C        00:01:34:07 00:01:44:10 00:03:32:16 00:03:42:19
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Entonces lees para identificar y hablar en voz alta, leer en voz alta,
+
+038  TOMA2    AA/V  C        00:01:44:22 00:01:45:12 00:03:42:19 00:03:43:09
+* FROM CLIP NAME: toma2.mov
+* COMMENT: mejorando
+
+039  TOMA2    AA/V  C        00:01:45:12 00:01:51:12 00:03:43:09 00:03:49:09
+* FROM CLIP NAME: toma2.mov
+* COMMENT: y el writing entonces que es para escribir oraciones, frases bloques d
+
+040  TOMA2    AA/V  C        00:01:51:19 00:01:59:02 00:03:49:09 00:03:56:22
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Y aprender frases en contexto no su traducción, no traducir algo de es
+
+041  TOMA2    AA/V  C        00:01:59:13 00:02:04:14 00:03:56:22 00:04:01:23
+* FROM CLIP NAME: toma2.mov
+* COMMENT: No traducir esto en inglés. Porque entonces probablemente te dé la res
+
+042  TOMA2    AA/V  C        00:02:08:13 00:02:10:21 00:04:01:23 00:04:04:01
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Y mucho, mucho input.
+
+043  TOMA2    AA/V  C        00:02:11:25 00:02:18:03 00:04:04:01 00:04:10:09
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Búscate una serie que tenga muchas, muchos capítulos, muchas temporada
+
+044  TOMA2    AA/V  C        00:02:18:14 00:02:26:27 00:04:10:09 00:04:18:22
+* FROM CLIP NAME: toma2.mov
+* COMMENT: para la, el reading, porque le vas a poner subtítulos y el listening p
+
+045  TOMA2    AA/V  C        00:02:26:27 00:02:37:28 00:04:18:22 00:04:29:23
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Aquí lo importante es ir adecuando el oído, a la rapidez, a la velocid
+
+046  TOMA2    AA/V  C        00:02:38:10 00:02:46:16 00:04:29:23 00:04:37:29
+* FROM CLIP NAME: toma2.mov
+* COMMENT: enfocándote en esto y ya luego vas a ir aprendiendo por el contexto va
+
+047  TOMA2    AA/V  C        00:02:46:25 00:02:56:04 00:04:37:29 00:04:47:08
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Escuchar música, escuchar podcast. Tú tienes que sumergirte en el idio
+
+048  TOMA2    AA/V  C        00:02:57:20 00:03:05:14 00:04:47:08 00:04:55:02
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Si tienes alguien que hable inglés, sería bueno que te acompañe en tu 
+
+049  TOMA2    AA/V  C        00:03:05:23 00:03:16:10 00:04:55:02 00:05:05:19
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Si no, pues entonces la inteligencia artificial te puede ayudar con es
+
+050  TOMA2    AA/V  C        00:03:21:12 00:03:22:19 00:05:05:19 00:05:06:26
+* FROM CLIP NAME: toma2.mov
+* COMMENT: Hope this helps.

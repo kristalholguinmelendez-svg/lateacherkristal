@@ -1,0 +1,84 @@
+{
+  "brand": "LA TEACHER KRISTAL",
+  "notes": "Educativo, elegante y juvenil. Autoridad con humor inteligente. Energía sin caos.",
+  "fonts": {
+    "dir": "assets/fonts",
+    "display": "Inter Black",
+    "display_file": "Inter-Black.otf",
+    "strong": "Inter ExtraBold",
+    "strong_file": "Inter-ExtraBold.otf",
+    "body": "Inter SemiBold",
+    "body_file": "Inter-SemiBold.otf"
+  },
+  "colors": {
+    "ink": "#15112E",
+    "cream": "#FFF8EE",
+    "white": "#FFFFFF",
+    "accent": "#FF4F8B",
+    "gold": "#FFC83D",
+    "correct": "#22D69B",
+    "wrong": "#FF5A5F",
+    "muted": "#B9B3D6"
+  },
+  "layout": {
+    "comment": "Fracciones de la altura (y) y ancho (x) del cuadro 9:16. Las zonas evitan la interfaz de TikTok/Reels/Shorts y la cara.",
+    "face_center_y": 0.34,
+    "graphics_center_y": 0.645,
+    "captions_center_y": 0.78,
+    "safe_top": 0.1,
+    "safe_bottom": 0.8,
+    "safe_left": 0.06,
+    "safe_right": 0.86
+  },
+  "captions": {
+    "font": "display",
+    "size": 74,
+    "uppercase": true,
+    "max_words": 3,
+    "max_chars": 18,
+    "text_color": "white",
+    "active_color": "gold",
+    "keyword_color": "accent",
+    "outline": 6,
+    "outline_color": "ink",
+    "shadow": 3,
+    "pop_ms": 90
+  },
+  "graphics": {
+    "card_radius": 34,
+    "card_fill": "cream",
+    "card_alpha": 0.96,
+    "card_text": "ink",
+    "in_ms": 220,
+    "out_ms": 160,
+    "word_size": 118,
+    "label_size": 44,
+    "example_size": 62
+  },
+  "framing": {
+    "comment": "Zoom relativo al encuadre base 9:16. max_upscale limita la ampliación real de píxeles para no perder nitidez.",
+    "wide": 1.0,
+    "medium": 1.12,
+    "close": 1.26,
+    "punch": 0.1,
+    "punch_in_ms": 260,
+    "punch_out_ms": 420,
+    "transition_ms": 300,
+    "max_upscale": 1.35
+  },
+  "audio": {
+    "target_lufs": -14.0,
+    "true_peak": -1.5,
+    "highpass_hz": 75,
+    "denoise_strength": "auto",
+    "presence_db": 2.5,
+    "edge_fade_ms": 12
+  },
+  "look": {
+    "max_brightness": 0.06,
+    "max_contrast": 1.1,
+    "max_saturation": 1.08,
+    "sharpen": 0.35,
+    "denoise": 1.2
+  }
+}

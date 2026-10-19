@@ -1,0 +1,382 @@
+1
+00:00:00,013 --> 00:00:03,811
+El inglés no se escribe como se pronuncia,
+ni se pronuncia como se escribe.
+
+2
+00:00:03,811 --> 00:00:09,011
+Soy maestra de inglés y si estás empezando
+a estudiar inglés desde casa por ti mismo
+
+3
+00:00:09,011 --> 00:00:15,132
+sin un apoyo como un maestro o algún tipo
+de curso esto es lo que yo te recomendaría
+
+4
+00:00:15,132 --> 00:00:16,900
+como maestra que hicieras.
+
+5
+00:00:16,900 --> 00:00:19,630
+Lo primero que deberías hacer es...
+
+6
+00:00:19,972 --> 00:00:22,300
+familiarizarte con el idioma.
+
+7
+00:00:22,300 --> 00:00:28,332
+El inglés no es un idioma totalmente
+fonético, por lo que la escritura va a ser
+
+8
+00:00:28,332 --> 00:00:30,107
+diferente a la pronunciación.
+
+9
+00:00:30,107 --> 00:00:34,827
+Esto frustra a muchas personas porque como
+idioma principal que es el español, lo que
+
+10
+00:00:34,827 --> 00:00:37,573
+ves tal cual lo dices,
+en inglés no es así.
+
+11
+00:00:37,573 --> 00:00:41,893
+Entonces, ¿qué puedes hacer para
+familiarizarte con los sonidos?
+
+12
+00:00:41,893 --> 00:00:46,080
+aprenderte el cuadro IPA, en esto te dicen
+los cuarenta y cuatro sonidos que tiene el
+
+13
+00:00:46,080 --> 00:00:47,776
+inglés, te los vas aprendiendo.
+
+14
+00:00:47,776 --> 00:00:51,989
+Vas buscando ejemplos de palabras que
+tengan estos sonidos para que te vayas
+
+15
+00:00:51,989 --> 00:00:52,911
+familiarizando.
+
+16
+00:00:52,911 --> 00:00:56,551
+Después de ahí entonces comienzas
+a construir un vocabulario.
+
+17
+00:00:56,551 --> 00:01:00,871
+El orden en el que te aprendas el
+vocabulario muchas veces empieza por la
+
+18
+00:01:00,871 --> 00:01:06,071
+introducción, luego por la edad, identificar
+cosas, hablar de la familia, de dónde
+
+19
+00:01:06,071 --> 00:01:07,048
+eres, en fin.
+
+20
+00:01:07,048 --> 00:01:12,328
+Si no te preocupa tener un orden, puedes
+empezar con algo que te guste a ti, buscar
+
+21
+00:01:12,328 --> 00:01:16,648
+palabras de contenido, es decir, vocabulario,
+de temas que te interesen a ti o que
+
+22
+00:01:16,648 --> 00:01:18,168
+sean útiles para ti.
+
+23
+00:01:18,168 --> 00:01:21,688
+Entonces, digamos que a ti
+te gusta hablar de economía.
+
+24
+00:01:21,688 --> 00:01:25,869
+Entonces basas tus clases
+en aprender de economía.
+
+25
+00:01:25,869 --> 00:01:33,149
+Te vas a apoyar de la IA para que te ayude
+con las explicaciones de temas, te diga
+
+26
+00:01:33,149 --> 00:01:38,599
+qué vocabulario se trabaja en economía,
+si es el tema del que quieres hablar, y
+
+27
+00:01:38,669 --> 00:01:44,109
+también te vas usando esas mismas palabras
+o esas estructuras que aprendes, las vas
+
+28
+00:01:44,109 --> 00:01:47,100
+utilizando junto con los sonidos
+para que empieces a practicar.
+
+29
+00:01:47,100 --> 00:01:53,417
+Luego de esto te recomiendo aprender textos
+y decirlos en voz alta, ya sea frente a
+
+30
+00:01:53,417 --> 00:01:55,337
+un espejo, ya sea grabándote.
+
+31
+00:01:55,337 --> 00:02:00,137
+Y entonces se lo puedes enviar a la IA en
+Gemini, tú lo colocas y les dices que te
+
+32
+00:02:00,137 --> 00:02:04,315
+corrijas cualquier error que puedas
+cometer y que te dé consejos para mejorar.
+
+33
+00:02:04,315 --> 00:02:08,075
+Si quieres seguir un orden, hay libros
+de texto online que puedes comprar o que
+
+34
+00:02:08,075 --> 00:02:09,355
+puedes adquirir gratis.
+
+35
+00:02:09,355 --> 00:02:14,795
+Y ahí te dan un orden de temas que los
+puedes tomar como referencia y ya después de
+
+36
+00:02:14,795 --> 00:02:17,675
+ahí utiliza tu propio
+estilo de aprendizaje.
+
+37
+00:02:17,675 --> 00:02:22,044
+Ya sea viendo videos, que vaya
+enfocado a eso que estás estudiando.
+
+38
+00:02:22,044 --> 00:02:26,124
+Cuando estás estudiando un tema debes tomar
+en cuenta que debes trabajar las cuatro
+
+39
+00:02:26,124 --> 00:02:27,974
+habilidades, que son el listening,
+
+40
+00:02:28,396 --> 00:02:33,809
+escuchar El speaking, hablar, que son
+esas presentaciones, leer en voz alta, el
+
+41
+00:02:33,809 --> 00:02:38,449
+writing, que es escribir, preferiblemente
+escribir el vocabulario para acostumbrarte
+
+42
+00:02:38,449 --> 00:02:41,907
+a él, y estructuras que
+vayan con ese vocabulario.
+
+43
+00:02:41,907 --> 00:02:47,220
+El vocabulario que va con esta introducción
+sería Hello, nice to meet you, good
+
+44
+00:02:47,220 --> 00:02:51,615
+afternoon My name is y la
+estructura es el am, is, are.
+
+45
+00:02:51,615 --> 00:02:55,832
+Entonces tú dirías: My name is Kristal,
+I'm thirty years old, y así, esa es la
+
+46
+00:02:55,832 --> 00:02:56,757
+estructura que va.
+
+47
+00:02:56,757 --> 00:03:01,669
+Entonces combinas el vocabulario con
+la estructura que podría unirse a este
+
+48
+00:03:01,669 --> 00:03:06,780
+vocabulario. En este caso, por ejemplo,
+los saludos más el am, is, are.
+
+49
+00:03:06,780 --> 00:03:09,740
+O las introducciones más el am, is, are.
+
+50
+00:03:09,740 --> 00:03:14,396
+Entonces vas a ir uniendo estructuras
+con cosas relacionadas, con vocabulario
+
+51
+00:03:14,396 --> 00:03:18,076
+relacionado a esa estructura, para que
+empieces a utilizarla, no solo te quedes en
+
+52
+00:03:18,076 --> 00:03:23,823
+estructura. Y luego entonces el reading
+para leer asegúrate de que lo que tu estás
+
+53
+00:03:23,823 --> 00:03:27,423
+leyendo sea lo que estás aprendiendo, sea
+el mismo vocabulario para que lo puedas
+
+54
+00:03:27,423 --> 00:03:28,467
+poner en contexto.
+
+55
+00:03:28,467 --> 00:03:30,501
+Y el writing que es escribir.
+
+56
+00:03:30,501 --> 00:03:32,533
+el reading va primero y luego el writing.
+
+57
+00:03:32,533 --> 00:03:37,808
+Entonces lees para identificar y hablar en
+voz alta, leer en voz alta, para practicar
+
+58
+00:03:37,808 --> 00:03:42,672
+la pronunciación, el listening de ti
+mismo y ver qué tanto vas verdad.
+
+59
+00:03:42,672 --> 00:03:47,642
+mejorando y el writing entonces que
+es para escribir oraciones, frases
+
+60
+00:03:48,064 --> 00:03:52,743
+bloques de palabras Y aprender frases en
+contexto no su traducción, no traducir algo
+
+61
+00:03:52,743 --> 00:03:56,776
+de español a inglés, sino
+cómo se dice esto in English?
+
+62
+00:03:56,776 --> 00:03:58,776
+No traducir esto en inglés.
+
+63
+00:03:58,776 --> 00:04:01,769
+Porque entonces probablemente
+te dé la respuesta incorrecta.
+
+64
+00:04:01,769 --> 00:04:04,044
+Y mucho, mucho input.
+
+65
+00:04:04,044 --> 00:04:08,694
+Búscate una serie que tenga muchas, muchos
+capítulos, muchas temporadas, y haz eso tu
+
+66
+00:04:08,764 --> 00:04:13,277
+momento para inglés, para la, el reading,
+porque le vas a poner subtítulos y el
+
+67
+00:04:13,277 --> 00:04:18,237
+listening porque vas a escuchar, vas a
+adquirir mucho, no importa que no entiendas
+
+68
+00:04:18,237 --> 00:04:23,437
+nada. Aquí lo importante es ir adecuando el
+oído, a la rapidez, a la velocidad en la
+
+69
+00:04:23,437 --> 00:04:27,997
+que hablan los norteamericanos o las personas
+que hablan inglés, y a luego hacerlo de
+
+70
+00:04:27,997 --> 00:04:29,773
+forma como consciente.
+
+71
+00:04:29,773 --> 00:04:33,773
+enfocándote en esto y ya luego vas a ir
+aprendiendo por el contexto vas a ir
+
+72
+00:04:33,773 --> 00:04:37,533
+adecuándote y vas a ir entendiendo poquito
+a poquito más los estudios que estás
+
+73
+00:04:37,533 --> 00:04:40,615
+haciendo. Escuchar
+música, escuchar podcast.
+
+74
+00:04:40,615 --> 00:04:46,701
+Tú tienes que sumergirte en el idioma,
+tienes que hacerlo por inmersión, por ti
+
+75
+00:04:46,701 --> 00:04:50,724
+mismo. Si tienes alguien que hable inglés,
+sería bueno que te acompañe en tu proceso
+
+76
+00:04:50,724 --> 00:04:52,734
+para corrección, para
+
+77
+00:04:53,124 --> 00:04:55,067
+simplemente que hable contigo.
+
+78
+00:04:55,067 --> 00:04:58,424
+Si no, pues entonces la inteligencia
+artificial te puede ayudar con eso también.
+
+79
+00:04:58,424 --> 00:05:03,384
+Puedes hablar con ella, dile que estás
+aprendiendo y que vas en tal nivel o que es
+
+80
+00:05:03,384 --> 00:05:05,633
+apenas que estás iniciando
+y que vamos a hablar.
+
+81
+00:05:05,633 --> 00:05:07,079
+Hope this helps.

@@ -1,0 +1,39 @@
+[Script Info]
+; LA TEACHER KRISTAL — generado por kristal
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: G,Inter Black,60,&H002E1115,&H002E1115,&H00000000,&HFF000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 7,0:00:06.57,0:00:12.87,G,,0,0,0,,{\an5\pos(540,250)\fnInter Black\fs92\bord6\shad3\3c&H2E1115&\4c&H2E1115&\fscx80\fscy80\alpha&HFF&\t(0,140,\fscx104\fscy104\alpha&H00&)\t(140,240,\fscx100\fscy100)\fad(0,160)}{\1c&H3DC8FF&}INGLÉS{\1c&HFFFFFF&} DESDE CASA
+Dialogue: 1,0:00:16.90,0:00:52.03,G,,0,0,0,,{\an7\move(379.0,256.0,379.0,220.0,0,220)\alpha&HFF&\t(0,220,\alpha&HB2&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 32 0 l 298 0 b 315.6 0 330 14.3 330 32 l 330 32 b 330 49.7 315.6 64 298 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 2,0:00:16.90,0:00:52.03,G,,0,0,0,,{\an7\move(375.0,244.0,375.0,208.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\p1\bord0\shad0\1c&H8B4FFF&}m 32 0 l 298 0 b 315.6 0 330 14.3 330 32 l 330 32 b 330 49.7 315.6 64 298 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 3,0:00:16.90,0:00:52.03,G,,0,0,0,,{\an5\move(540.0,276.0,540.0,240.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs40\bord0\shad0\1c&HFFFFFF&}1 · LOS SONIDOS
+Dialogue: 1,0:00:42.45,0:00:47.00,G,,0,0,0,,{\an7\move(364.3,1151.7,364.3,1115.7,0,220)\alpha&HFF&\t(0,220,\alpha&HB6&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 34 0 l 325.3 0 b 344.1 0 359.3 15.2 359.3 34 l 359.3 235.5 b 359.3 254.3 344.1 269.5 325.3 269.5 l 34 269.5 b 15.2 269.5 0 254.3 0 235.5 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 2,0:00:42.45,0:00:47.00,G,,0,0,0,,{\an7\move(360.3,1139.7,360.3,1103.7,0,220)\alpha&HFF&\t(0,220,\alpha&H0A&)\fad(0,160)\p1\bord0\shad0\1c&HEEF8FF&}m 34 0 l 325.3 0 b 344.1 0 359.3 15.2 359.3 34 l 359.3 235.5 b 359.3 254.3 344.1 269.5 325.3 269.5 l 34 269.5 b 15.2 269.5 0 254.3 0 235.5 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 3,0:00:42.45,0:00:47.00,G,,0,0,0,,{\an5\move(540.0,1242.5,540.0,1206.5,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter Black\fs118\bord0\shad0\1c&H2E1115&}IPA
+Dialogue: 3,0:00:42.45,0:00:47.00,G,,0,0,0,,{\an5\move(540.0,1342.3,540.0,1306.3,180,400)\alpha&HFF&\t(180,400,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs44\bord0\shad0\1c&H8B4FFF&}44 sonidos
+Dialogue: 1,0:00:52.91,0:01:25.25,G,,0,0,0,,{\an7\move(365.9,256.0,365.9,220.0,0,220)\alpha&HFF&\t(0,220,\alpha&HB2&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 32 0 l 324.3 0 b 342 0 356.3 14.3 356.3 32 l 356.3 32 b 356.3 49.7 342 64 324.3 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 2,0:00:52.91,0:01:25.25,G,,0,0,0,,{\an7\move(361.9,244.0,361.9,208.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\p1\bord0\shad0\1c&H8B4FFF&}m 32 0 l 324.3 0 b 342 0 356.3 14.3 356.3 32 l 356.3 32 b 356.3 49.7 342 64 324.3 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 3,0:00:52.91,0:01:25.25,G,,0,0,0,,{\an5\move(540.0,276.0,540.0,240.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs40\bord0\shad0\1c&HFFFFFF&}2 · VOCABULARIO
+Dialogue: 1,0:01:25.87,0:01:46.43,G,,0,0,0,,{\an7\move(445.1,256.0,445.1,220.0,0,220)\alpha&HFF&\t(0,220,\alpha&HB2&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 32 0 l 165.8 0 b 183.5 0 197.8 14.3 197.8 32 l 197.8 32 b 197.8 49.7 183.5 64 165.8 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 2,0:01:25.87,0:01:46.43,G,,0,0,0,,{\an7\move(441.1,244.0,441.1,208.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\p1\bord0\shad0\1c&H8B4FFF&}m 32 0 l 165.8 0 b 183.5 0 197.8 14.3 197.8 32 l 197.8 32 b 197.8 49.7 183.5 64 165.8 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 3,0:01:25.87,0:01:46.43,G,,0,0,0,,{\an5\move(540.0,276.0,540.0,240.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs40\bord0\shad0\1c&HFFFFFF&}3 · LA IA
+Dialogue: 1,0:01:47.10,0:02:03.73,G,,0,0,0,,{\an7\move(378.8,256.0,378.8,220.0,0,220)\alpha&HFF&\t(0,220,\alpha&HB2&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 32 0 l 298.3 0 b 316 0 330.3 14.3 330.3 32 l 330.3 32 b 330.3 49.7 316 64 298.3 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 2,0:01:47.10,0:02:03.73,G,,0,0,0,,{\an7\move(374.8,244.0,374.8,208.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\p1\bord0\shad0\1c&H8B4FFF&}m 32 0 l 298.3 0 b 316 0 330.3 14.3 330.3 32 l 330.3 32 b 330.3 49.7 316 64 298.3 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 3,0:01:47.10,0:02:03.73,G,,0,0,0,,{\an5\move(540.0,276.0,540.0,240.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs40\bord0\shad0\1c&HFFFFFF&}4 · EN VOZ ALTA
+Dialogue: 1,0:02:04.32,0:02:21.20,G,,0,0,0,,{\an7\move(342.9,256.0,342.9,220.0,0,220)\alpha&HFF&\t(0,220,\alpha&HB2&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 32 0 l 370.2 0 b 387.8 0 402.2 14.3 402.2 32 l 402.2 32 b 402.2 49.7 387.8 64 370.2 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 2,0:02:04.32,0:02:21.20,G,,0,0,0,,{\an7\move(338.9,244.0,338.9,208.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\p1\bord0\shad0\1c&H8B4FFF&}m 32 0 l 370.2 0 b 387.8 0 402.2 14.3 402.2 32 l 402.2 32 b 402.2 49.7 387.8 64 370.2 64 l 32 64 b 14.3 64 0 49.7 0 32 l 0 32 b 0 14.3 14.3 0 32 0
+Dialogue: 3,0:02:04.32,0:02:21.20,G,,0,0,0,,{\an5\move(540.0,276.0,540.0,240.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs40\bord0\shad0\1c&HFFFFFF&}5 · LIBROS DE TEXTO
+Dialogue: 1,0:00:06.57,0:00:12.87,G,,0,0,0,,{\an7\move(452.8,374.4,452.8,338.4,0,220)\alpha&HFF&\t(0,220,\alpha&HB2&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 28.8 0 l 153.5 0 b 169.4 0 182.3 12.9 182.3 28.8 l 182.3 28.8 b 182.3 44.7 169.4 57.6 153.5 57.6 l 28.8 57.6 b 12.9 57.6 0 44.7 0 28.8 l 0 28.8 b 0 12.9 12.9 0 28.8 0
+Dialogue: 2,0:00:06.57,0:00:12.87,G,,0,0,0,,{\an7\move(448.8,362.4,448.8,326.4,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&}m 28.8 0 l 153.5 0 b 169.4 0 182.3 12.9 182.3 28.8 l 182.3 28.8 b 182.3 44.7 169.4 57.6 153.5 57.6 l 28.8 57.6 b 12.9 57.6 0 44.7 0 28.8 l 0 28.8 b 0 12.9 12.9 0 28.8 0
+Dialogue: 3,0:00:06.57,0:00:12.87,G,,0,0,0,,{\an5\move(540.0,391.2,540.0,355.2,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs36\bord0\shad0\1c&HFFFFFF&}PARTE 1
+Dialogue: 7,0:02:19.30,0:02:22.83,G,,0,0,0,,{\an5\pos(540,250)\fnInter Black\fs92\bord6\shad3\3c&H2E1115&\4c&H2E1115&\fscx80\fscy80\alpha&HFF&\t(0,140,\fscx104\fscy104\alpha&H00&)\t(140,240,\fscx100\fscy100)\fad(0,160)}{\1c&H3DC8FF&}PARTE 2{\1c&HFFFFFF&} →

@@ -1,0 +1,682 @@
+{
+  "name": "clase-01-parte-1",
+  "title": "Cómo aprender inglés desde casa — Parte 1",
+  "language": "es",
+  "sources": {
+    "A": "footage/toma1.mov",
+    "B": "footage/toma2.mov"
+  },
+  "vocab": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing",
+    "IPA",
+    "input"
+  ],
+  "approved_terms": [
+    "Kristal",
+    "am",
+    "is",
+    "are",
+    "parte"
+  ],
+  "transcript_fixes": {
+    "Crystal": "Kristal",
+    "Crystal,": "Kristal,",
+    "ehading": "reading",
+    "Buscate": "Búscate",
+    "asegurate": "asegúrate",
+    "entends": "entonces",
+    "diréis": "dirías"
+  },
+  "captions": {
+    "enabled": true,
+    "keywords": [
+      "IA",
+      "Gemini",
+      "vocabulario",
+      "estructura",
+      "inmersión",
+      "contexto"
+    ]
+  },
+  "audio": {
+    "denoise_strength": "rnnoise",
+    "rnnoise_mix": 0.85,
+    "highpass_hz": 110,
+    "music": null
+  },
+  "look": {
+    "auto": true,
+    "stabilize": true,
+    "overrides": {}
+  },
+  "zooms": [
+    {
+      "src": "A",
+      "at": 38.38,
+      "kind": "punch",
+      "why": "hook: ni se pronuncia como se escribe"
+    },
+    {
+      "src": "A",
+      "at": 21.05,
+      "kind": "punch",
+      "why": "no es totalmente fonético"
+    },
+    {
+      "src": "A",
+      "at": 50.38,
+      "kind": "punch",
+      "why": "44 sonidos"
+    },
+    {
+      "src": "A",
+      "at": 79.3,
+      "kind": "punch",
+      "why": "algo que te guste a ti"
+    },
+    {
+      "src": "A",
+      "at": 101.2,
+      "kind": "punch",
+      "why": "la IA"
+    },
+    {
+      "src": "A",
+      "at": 124.5,
+      "kind": "punch",
+      "why": "decirlos en voz alta"
+    },
+    {
+      "src": "A",
+      "at": 140.03,
+      "kind": "punch",
+      "why": "libros de texto"
+    }
+  ],
+  "graphics": [
+    {
+      "type": "title",
+      "src": "A",
+      "start": 3.4,
+      "end": 9.7,
+      "text": "[INGLÉS] DESDE CASA",
+      "y": 0.13
+    },
+    {
+      "type": "tag",
+      "src": "A",
+      "start": 14.9,
+      "end": 58.4,
+      "text": "1 · LOS SONIDOS",
+      "y": 0.125,
+      "size": 40
+    },
+    {
+      "type": "word",
+      "src": "A",
+      "start": 45.22,
+      "end": 52.7,
+      "word": "IPA",
+      "label": "44 sonidos"
+    },
+    {
+      "type": "tag",
+      "src": "A",
+      "start": 59.44,
+      "end": 93.55,
+      "text": "2 · VOCABULARIO",
+      "y": 0.125,
+      "size": 40
+    },
+    {
+      "type": "tag",
+      "src": "A",
+      "start": 98.84,
+      "end": 119.4,
+      "text": "3 · LA IA",
+      "y": 0.125,
+      "size": 40
+    },
+    {
+      "type": "tag",
+      "src": "A",
+      "start": 120.56,
+      "end": 137.2,
+      "text": "4 · EN VOZ ALTA",
+      "y": 0.125,
+      "size": 40
+    },
+    {
+      "type": "tag",
+      "src": "A",
+      "start": 138.55,
+      "end": 7.5,
+      "text": "5 · LIBROS DE TEXTO",
+      "y": 0.125,
+      "size": 40,
+      "end_src": "B"
+    },
+    {
+      "type": "tag",
+      "src": "A",
+      "start": 3.4,
+      "end": 9.7,
+      "text": "PARTE 1",
+      "y": 0.185,
+      "size": 36,
+      "color": "ink"
+    },
+    {
+      "type": "title",
+      "src": "B",
+      "start": 5.6,
+      "text": "[PARTE 2] →",
+      "y": 0.13,
+      "dur": 4.0
+    }
+  ],
+  "audio_hints": {
+    "A": {
+      "noise_db": -34.1,
+      "speech_db": -17.6,
+      "hum_hz": null
+    },
+    "B": {
+      "noise_db": -34.2,
+      "speech_db": -17.4,
+      "hum_hz": null
+    }
+  },
+  "transcript_edits": [
+    {
+      "src": "A",
+      "s": 0.6,
+      "e": 0.7,
+      "text": "Soy"
+    },
+    {
+      "src": "A",
+      "s": 40.3,
+      "e": 44.05,
+      "text": "Entonces, ¿qué puedes hacer para familiarizarte con los sonidos?"
+    },
+    {
+      "src": "B",
+      "s": 44.7,
+      "e": 45.7,
+      "text": "el am, is, are."
+    },
+    {
+      "src": "B",
+      "s": 46.4,
+      "e": 46.7,
+      "text": "tú dirías:"
+    },
+    {
+      "src": "B",
+      "s": 54.35,
+      "e": 57.0,
+      "text": "y así, esa es la estructura que va. Entonces combinas el vocabulario"
+    },
+    {
+      "src": "B",
+      "s": 57.9,
+      "e": 61.5,
+      "text": "con la estructura que podría unirse a este vocabulario."
+    },
+    {
+      "src": "B",
+      "s": 64.8,
+      "e": 65.0,
+      "text": "el am, is, are."
+    },
+    {
+      "src": "B",
+      "s": 68.05,
+      "e": 68.3,
+      "text": "el am, is, are."
+    },
+    {
+      "src": "B",
+      "s": 71.25,
+      "e": 71.35,
+      "text": "con"
+    },
+    {
+      "src": "B",
+      "s": 102.85,
+      "e": 103.4,
+      "text": "qué tanto vas"
+    },
+    {
+      "src": "B",
+      "s": 112.15,
+      "e": 112.25,
+      "text": "frases"
+    },
+    {
+      "src": "B",
+      "s": 117.6,
+      "e": 118.7,
+      "text": "esto in English?"
+    },
+    {
+      "src": "B",
+      "s": 122.9,
+      "e": 122.95,
+      "text": "te dé"
+    },
+    {
+      "src": "B",
+      "s": 166.05,
+      "e": 166.15,
+      "text": "haciendo."
+    },
+    {
+      "src": "B",
+      "s": 166.8,
+      "e": 175.75,
+      "text": "Escuchar música, escuchar podcast. Tú tienes que sumergirte en el idioma, tienes que hacerlo por inmersión, por ti mismo."
+    },
+    {
+      "src": "B",
+      "s": 177.65,
+      "e": 177.7,
+      "text": "Si"
+    }
+  ],
+  "plan": [
+    {
+      "id": "b01",
+      "src": "A",
+      "from": 36.58,
+      "to": 39.75,
+      "role": "hook",
+      "framing": "close"
+    },
+    {
+      "id": "b02",
+      "src": "A",
+      "from": 0.64,
+      "to": 9.75,
+      "role": "curiosity",
+      "framing": "medium"
+    },
+    {
+      "id": "b03",
+      "src": "A",
+      "from": 11.01,
+      "to": 14.0,
+      "role": "curiosity",
+      "framing": "wide"
+    },
+    {
+      "id": "b04",
+      "src": "A",
+      "from": 14.9,
+      "to": 19.8,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b05",
+      "src": "A",
+      "from": 20.29,
+      "to": 28.2,
+      "role": "explanation",
+      "framing": "wide",
+      "skip": [
+        [
+          25.3,
+          25.8
+        ]
+      ]
+    },
+    {
+      "id": "b06",
+      "src": "A",
+      "from": 29.14,
+      "to": 36.2,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b07",
+      "src": "A",
+      "from": 40.3,
+      "to": 45.6,
+      "role": "explanation",
+      "framing": "close",
+      "out": 45.91,
+      "note": "IPA: el reconocedor no la transcribe; borde fijado en el valle entre 'IPA' y 'que'"
+    },
+    {
+      "id": "b08",
+      "src": "A",
+      "from": 48.82,
+      "to": 52.7,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b09",
+      "src": "A",
+      "from": 53.88,
+      "to": 54.8,
+      "role": "explanation",
+      "framing": "wide"
+    },
+    {
+      "id": "b10",
+      "src": "A",
+      "from": 55.88,
+      "to": 58.4,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b11",
+      "src": "A",
+      "from": 59.44,
+      "to": 62.1,
+      "role": "explanation",
+      "framing": "close"
+    },
+    {
+      "id": "b12",
+      "src": "A",
+      "from": 63.28,
+      "to": 73.4,
+      "role": "explanation",
+      "framing": "wide"
+    },
+    {
+      "id": "b13",
+      "src": "A",
+      "from": 75.35,
+      "to": 85.95,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b14",
+      "src": "A",
+      "from": 86.47,
+      "to": 93.55,
+      "role": "explanation",
+      "framing": "close"
+    },
+    {
+      "id": "b15",
+      "src": "A",
+      "from": 98.84,
+      "to": 110.4,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b16",
+      "src": "A",
+      "from": 111.0,
+      "to": 119.4,
+      "role": "explanation",
+      "framing": "wide"
+    },
+    {
+      "id": "b17",
+      "src": "A",
+      "from": 120.56,
+      "to": 127.9,
+      "role": "explanation",
+      "framing": "close"
+    },
+    {
+      "id": "b18",
+      "src": "A",
+      "from": 128.8,
+      "to": 137.2,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b19",
+      "src": "A",
+      "from": 138.55,
+      "to": 147.6,
+      "role": "explanation",
+      "framing": "wide"
+    },
+    {
+      "id": "b20",
+      "src": "A",
+      "from": 148.15,
+      "to": 152.75,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b21",
+      "src": "B",
+      "from": 5.3,
+      "to": 7.5,
+      "role": "payoff",
+      "framing": "close"
+    }
+  ],
+  "brand_overrides": {
+    "framing": {
+      "medium": 1.07,
+      "close": 1.15,
+      "punch": 0.06,
+      "max_upscale": 2.3
+    }
+  },
+  "asr_model_dir": "assets/models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+  "output": {
+    "tail_hold": 0.8
+  },
+  "segments": [
+    {
+      "src": "A",
+      "in": 36.58,
+      "out": 40.36,
+      "role": "hook",
+      "framing": "close",
+      "text": "El inglés no se escribe como se pronuncia, ni se pronuncia como se escribe.",
+      "phrase": "b01"
+    },
+    {
+      "src": "A",
+      "in": 0.64,
+      "out": 10.02,
+      "role": "curiosity",
+      "framing": "medium",
+      "text": "Soy maestra de inglés y si estás empezando a estudiar inglés desde casa por ti mismo sin un apoyo como un maestro o algún tipo de curso",
+      "phrase": "b02"
+    },
+    {
+      "src": "A",
+      "in": 11.01,
+      "out": 14.71,
+      "role": "curiosity",
+      "framing": "wide",
+      "text": "esto es lo que yo te recomendaría como maestra que hicieras.",
+      "phrase": "b03"
+    },
+    {
+      "src": "A",
+      "in": 14.9,
+      "out": 20.285,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "Lo primero que deberías hacer es... familiarizarte con el idioma.",
+      "phrase": "b04"
+    },
+    {
+      "src": "A",
+      "in": 20.285,
+      "out": 25.05,
+      "role": "explanation",
+      "framing": "wide",
+      "text": "El inglés no es un idioma totalmente fonético, por lo que",
+      "phrase": "b05"
+    },
+    {
+      "src": "A",
+      "in": 26.05,
+      "out": 29.11,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "la escritura va a ser diferente a la pronunciación.",
+      "phrase": "b05"
+    },
+    {
+      "src": "A",
+      "in": 29.14,
+      "out": 36.6,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "Esto frustra a muchas personas porque como idioma principal que es el español, lo que ves tal cual lo dices, en inglés no es así.",
+      "phrase": "b06"
+    },
+    {
+      "src": "A",
+      "in": 40.34,
+      "out": 45.91,
+      "role": "explanation",
+      "framing": "close",
+      "text": "Entonces, ¿qué puedes hacer para familiarizarte con los sonidos? aprenderte el cuadro IPA,",
+      "phrase": "b07",
+      "lock_out": true
+    },
+    {
+      "src": "A",
+      "in": 48.82,
+      "out": 53.48,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "en esto te dicen los cuarenta y cuatro sonidos que tiene el inglés, te los vas aprendiendo.",
+      "phrase": "b08"
+    },
+    {
+      "src": "A",
+      "in": 53.876,
+      "out": 55.58,
+      "role": "explanation",
+      "framing": "wide",
+      "text": "Vas buscando ejemplos",
+      "phrase": "b09"
+    },
+    {
+      "src": "A",
+      "in": 55.83,
+      "out": 59.26,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "de palabras que tengan estos sonidos para que te vayas familiarizando.",
+      "phrase": "b10"
+    },
+    {
+      "src": "A",
+      "in": 59.44,
+      "out": 63.06,
+      "role": "explanation",
+      "framing": "close",
+      "text": "Después de ahí entonces comienzas a construir un vocabulario.",
+      "phrase": "b11"
+    },
+    {
+      "src": "A",
+      "in": 63.25,
+      "out": 73.764,
+      "role": "explanation",
+      "framing": "wide",
+      "text": "El orden en el que te aprendas el vocabulario muchas veces empieza por la introducción, luego por la edad, identificar cosas, hablar de la familia, de dónde eres, en fin.",
+      "phrase": "b12"
+    },
+    {
+      "src": "A",
+      "in": 75.348,
+      "out": 86.479,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "Si no te preocupa tener un orden, puedes empezar con algo que te guste a ti, buscar palabras de contenido, es decir, vocabulario, de temas que te interesen a ti o que sean útiles para ti.",
+      "phrase": "b13"
+    },
+    {
+      "src": "A",
+      "in": 86.479,
+      "out": 94.17,
+      "role": "explanation",
+      "framing": "close",
+      "text": "Entonces, digamos que a ti te gusta hablar de economía. Entonces basas tus clases en aprender de economía.",
+      "phrase": "b14"
+    },
+    {
+      "src": "A",
+      "in": 98.836,
+      "out": 110.968,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "Te vas a apoyar de la IA para que te ayude con las explicaciones de temas, te diga qué vocabulario se trabaja en economía, si es el tema del que quieres hablar,",
+      "phrase": "b15"
+    },
+    {
+      "src": "A",
+      "in": 110.968,
+      "out": 120.06,
+      "role": "explanation",
+      "framing": "wide",
+      "text": "y también te vas usando esas mismas palabras o esas estructuras que aprendes, las vas utilizando junto con los sonidos para que empieces a practicar.",
+      "phrase": "b16"
+    },
+    {
+      "src": "A",
+      "in": 120.56,
+      "out": 128.81,
+      "role": "explanation",
+      "framing": "close",
+      "text": "Luego de esto te recomiendo aprender textos y decirlos en voz alta, ya sea frente a un espejo, ya sea grabándote.",
+      "phrase": "b17"
+    },
+    {
+      "src": "A",
+      "in": 128.81,
+      "out": 137.78,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "Y entonces se lo puedes enviar a la IA en Gemini, tú lo colocas y les dices que te corrijas cualquier error que puedas cometer y que te dé consejos para mejorar.",
+      "phrase": "b18"
+    },
+    {
+      "src": "A",
+      "in": 138.548,
+      "out": 148.174,
+      "role": "explanation",
+      "framing": "wide",
+      "text": "Si quieres seguir un orden, hay libros de texto online que puedes comprar o que puedes adquirir gratis. Y ahí te dan un orden de temas que los puedes tomar como referencia",
+      "phrase": "b19"
+    },
+    {
+      "src": "A",
+      "in": 148.174,
+      "out": 153.11,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "y ya después de ahí utiliza tu propio estilo de aprendizaje. Ya sea viendo videos,",
+      "phrase": "b20"
+    },
+    {
+      "src": "B",
+      "in": 5.16,
+      "out": 8.34,
+      "role": "payoff",
+      "framing": "close",
+      "text": "que vaya enfocado a eso que estás estudiando.",
+      "phrase": "b21"
+    }
+  ]
+}

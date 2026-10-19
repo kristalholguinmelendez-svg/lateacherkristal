@@ -1,0 +1,5 @@
+# Sistema: ffmpeg/ffprobe >= 6 con libass, libx264 y vidstab (apt install ffmpeg)
+numpy>=1.24
+pillow>=10
+opencv-python-headless>=4.8,<5   # OpenCV 5 retiró CascadeClassifier (seguimiento de rostro)
+faster-whisper>=1.0              # transcripción con timestamps por palabra

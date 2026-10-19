@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+# material pesado: grabaciones, intermedios y videos renderizados
+projects/*/footage/
+projects/*/work/
+projects/*/exports/*.mp4
+projects/*/exports/qc/*.jpg
+# modelos descargados con scripts/fetch_models.sh
+assets/models/sherpa-onnx-*/
+assets/models/*.onnx
+assets/models/*.rnnn
