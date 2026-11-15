@@ -1,0 +1,4 @@
+capcut_output/
+__pycache__/
+*.egg-info/
+.venv/
