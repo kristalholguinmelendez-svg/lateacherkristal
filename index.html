@@ -1,0 +1,144 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reto de Inglés</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="10 errores que casi todos los hispanohablantes cometen en inglés. ¿Cuántos cometes tú?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&family=Caveat:wght@600&display=swap">
+<style>
+/* Layout: a single ruled notebook page; the teacher's red pen marks every answer. */
+:root{
+  --paper:#fbfcff; --rule:#dfe6f3; --margin:#f2b7b5;
+  --ink:#16244a; --muted:#5b6789; --pen:#d2302c; --ok:#1f8a4c; --hi:#ffe866;
+  --card:#ffffff;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;
+  --hand:"Caveat","Comic Sans MS",cursive;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0f1630; --rule:#1d2a4f; --margin:#5a2a35;
+  --ink:#e9eeff; --muted:#a3aed0; --pen:#ff6b62; --ok:#4fd18a; --hi:#b39b10; --card:#152045; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1630; --rule:#1d2a4f; --margin:#5a2a35;
+  --ink:#e9eeff; --muted:#a3aed0; --pen:#ff6b62; --ok:#4fd18a; --hi:#b39b10; --card:#152045; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--body);
+  background-image:linear-gradient(90deg,transparent 38px,var(--margin) 38px,var(--margin) 40px,transparent 40px),
+  repeating-linear-gradient(var(--paper) 0 31px,var(--rule) 31px 32px);}
+.wrap{max-width:640px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:28px}
+.eyebrow{font:600 13px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font:800 clamp(38px,9vw,64px)/1 var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1 mark{background:linear-gradient(transparent 55%,var(--hi) 55%);color:inherit;padding:0 .08em}
+.lead{margin:0;color:var(--muted);max-width:52ch}
+.note{font:600 26px/1.1 var(--hand);color:var(--pen);transform:rotate(-2deg);margin:0}
+.progress{display:flex;gap:6px}
+.progress i{flex:1;height:6px;border-radius:3px;background:var(--rule)}
+.progress i.ok{background:var(--ok)} .progress i.bad{background:var(--pen)} .progress i.now{background:var(--ink)}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:24px;
+  box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column;gap:18px}
+.q{font:800 clamp(22px,5vw,28px)/1.2 var(--display);margin:0;text-wrap:balance}
+.num{font:600 14px var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+.opts{display:grid;gap:10px}
+.opt{all:unset;cursor:pointer;border:2px solid var(--rule);border-radius:6px;padding:14px 16px;font:600 18px var(--body);
+  position:relative;transition:border-color .15s,transform .1s}
+.opt:hover{border-color:var(--ink)} .opt:active{transform:translateY(1px)}
+.opt:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.opt[disabled]{cursor:default}
+.opt.right{border-color:var(--ok)} .opt.right::after{content:"✓";position:absolute;right:14px;color:var(--ok);font:600 26px/1 var(--hand)}
+.opt.wrong{border-color:var(--pen);text-decoration:line-through var(--pen) 2px}
+.opt.wrong::after{content:"✗";position:absolute;right:14px;color:var(--pen);font:600 26px/1 var(--hand)}
+.why{font:600 24px/1.2 var(--hand);color:var(--pen);margin:0}
+.why b{color:var(--ink);font:600 17px var(--body)}
+.btn{all:unset;cursor:pointer;text-align:center;background:var(--ink);color:var(--paper);font:800 18px var(--display);
+  padding:14px 22px;border-radius:6px}
+.btn:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.row>*{flex:1 1 180px}
+.score{font:800 clamp(72px,20vw,120px)/1 var(--display);margin:0;font-variant-numeric:tabular-nums}
+.score small{font-size:.35em;color:var(--muted)}
+.share{font:400 15px var(--body);background:var(--paper);border:1px dashed var(--muted);border-radius:6px;padding:12px;margin:0;white-space:pre-wrap}
+.foot{font-size:14px;color:var(--muted)}
+.foot a{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head><body>
+
+<main class="wrap">
+  <header style="display:flex;flex-direction:column;gap:14px">
+    <span class="eyebrow">LA Teacher Kristal · Reto de 60 segundos</span>
+    <h1>¿Hablas inglés <mark>de verdad</mark>?</h1>
+    <p class="lead">10 errores que casi todos los hispanohablantes cometen. El 80% falla al menos 4. ¿Y tú?</p>
+    <p class="note">¡Sin trampa! – Miss Kristal</p>
+  </header>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <section class="card" id="stage" aria-live="polite"></section>
+
+  <p class="foot">Hecho por <strong>@lateacherkristal</strong> · Clases de inglés para hispanohablantes. Comparte el reto con alguien que dice que "habla inglés fluido".</p>
+</main>
+
+<script>
+const Q=[
+ {q:"¿Cómo dices “Tengo 25 años”?",o:["I have 25 years","I am 25 years old"],a:1,w:"En inglés no “tienes” años, los ERES. <b>I am 25 (years old).</b>"},
+ {q:"Tu amigo da una buena idea. Dices…",o:["I'm agree","I agree"],a:1,w:"“Agree” ya es verbo. <b>I agree</b>, nunca “I'm agree”."},
+ {q:"“Actually” significa…",o:["Actualmente","En realidad"],a:1,w:"Falso amigo. Actualmente = <b>currently</b>."},
+ {q:"“I'm so embarrassed” significa…",o:["Estoy embarazada","Me da mucha vergüenza"],a:1,w:"¡Cuidado! Embarazada = <b>pregnant</b>."},
+ {q:"Completa: “It depends ___ you.”",o:["of","on"],a:1,w:"Siempre <b>depend on</b>. Nunca “depend of”."},
+ {q:"¿Cuál es correcta?",o:["People is crazy","People are crazy"],a:1,w:"“People” es plural en inglés: <b>people are</b>."},
+ {q:"Le pides a alguien que te explique algo:",o:["Can you explain me this?","Can you explain this to me?"],a:1,w:"<b>Explain something TO someone.</b>"},
+ {q:"“Carpet” es…",o:["Una alfombra","Una carpeta"],a:0,w:"Carpeta = <b>folder</b>. Carpet = alfombra."},
+ {q:"En clase quieres…",o:["Make a question","Ask a question"],a:1,w:"Las preguntas se <b>ask</b>, no se “make”."},
+ {q:"“Voy a asistir a la reunión”:",o:["I'm going to assist the meeting","I'm going to attend the meeting"],a:1,w:"Assist = ayudar. Asistir = <b>attend</b>."}
+];
+const LEVELS=[
+ [10,"Nivel nativo 🏆","Ok, ¿estás segura/o de que no eres de Los Ángeles?"],
+ [8,"Casi bilingüe","Te faltan detallitos. Con unas clases quedas perfecto."],
+ [5,"Spanglish certificado","Te entienden… pero se nota. ¡Normal! Se arregla rápido."],
+ [0,"Modo Google Translate","Tranqui: estos son justo los errores que corrijo en clase."]
+];
+const stage=document.getElementById('stage'),prog=document.getElementById('progress');
+let i=0,score=0,marks=[];
+function bar(){prog.innerHTML=Q.map((_,k)=>`<i class="${marks[k]||(k===i?'now':'')}"></i>`).join('')}
+function show(){
+  bar();const it=Q[i];
+  stage.innerHTML=`<span class="num">Pregunta ${i+1} de ${Q.length}</span><h2 class="q">${it.q}</h2>
+  <div class="opts">${it.o.map((t,k)=>`<button class="opt" id="opt${k}" data-k="${k}">${t}</button>`).join('')}</div>`;
+  stage.querySelectorAll('.opt').forEach(b=>b.onclick=()=>pick(+b.dataset.k));
+  stage.querySelector('.opt').focus({preventScroll:true});
+}
+function pick(k){
+  const it=Q[i],ok=k===it.a,btns=stage.querySelectorAll('.opt');
+  btns.forEach(b=>b.disabled=true);
+  btns[it.a].classList.add('right'); if(!ok)btns[k].classList.add('wrong');
+  if(ok)score++; marks[i]=ok?'ok':'bad'; bar();
+  stage.insertAdjacentHTML('beforeend',`<p class="why">${ok?'¡Bien! ':'Ups… '}${it.w}</p>
+   <button class="btn" id="next">${i<Q.length-1?'Siguiente →':'Ver mi resultado'}</button>`);
+  const n=document.getElementById('next');n.focus({preventScroll:true});
+  n.onclick=()=>{i++; i<Q.length?show():done()};
+}
+function done(){
+  i=-1;bar();
+  const [_,title,msg]=LEVELS.find(l=>score>=l[0]);
+  const text=`Saqué ${score}/10 en el reto “¿Hablas inglés de verdad?” de @lateacherkristal 😳\nResultado: ${title}\n¿Me ganas? 👇`;
+  const url=location.href.split('#')[0];
+  stage.innerHTML=`<span class="num">Tu resultado</span>
+   <p class="score">${score}<small>/10</small></p>
+   <h2 class="q">${title}</h2><p style="margin:0">${msg}</p>
+   <p class="share" id="sharetext">${text}\n${url}</p>
+   <div class="row">
+     <button class="btn" id="copy">Copiar y retar a alguien</button>
+     <a class="btn alt" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(text+'\n'+url)}">Enviar por WhatsApp</a>
+   </div>
+   <button class="btn alt" id="again">Intentar de nuevo</button>`;
+  document.getElementById('copy').onclick=async e=>{
+    try{await navigator.clipboard.writeText(text+'\n'+url);e.target.textContent='¡Copiado! Pégalo en tus stories';}
+    catch{const r=document.createRange();r.selectNodeContents(document.getElementById('sharetext'));
+      const s=getSelection();s.removeAllRanges();s.addRange(r);e.target.textContent='Texto seleccionado, cópialo';}
+  };
+  document.getElementById('again').onclick=()=>{i=0;score=0;marks=[];show()};
+}
+show();
+</script>
+</body></html>
