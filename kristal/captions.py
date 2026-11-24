@@ -10,7 +10,7 @@ import re
 
 from . import ass
 from .analyze import norm
-from .util import ass_rgb
+from .util import ass_alpha, ass_rgb
 
 _STRIP = re.compile(r"^[\"'“”«(]+|[\"'“”»),.;:]+$")
 
@@ -48,6 +48,11 @@ def build_ass(words: list[dict], brand: dict, cfg: dict, keywords: list[str], du
     else:
         st = ass.style("Cap", font, c["size"], col[c["text_color"]], outline=col[c["outline_color"]],
                        outline_w=c["outline"], shadow=c["shadow"], back=col["ink"], back_alpha=0.6)
+    plate = c.get("plate")          # {"color", "alpha", "pad_x", "pad_y", "radius"}: solid plate per chunk
+    lang_colors = c.get("lang_colors")  # {"es": "red", "en": "green"}: colour by language instead of keywords
+    reveal = c.get("reveal", False)     # words appear one by one as they are spoken
+    if plate:
+        st = ass.style("Cap", font, c["size"], col[c["text_color"]], outline_w=0, shadow=0)
     out = [ass.header(brand, [st])]
     kw = {norm(k) for k in keywords}
     y = int(brand["layout"]["captions_center_y"] * ass.H)
@@ -61,23 +66,43 @@ def build_ass(words: list[dict], brand: dict, cfg: dict, keywords: list[str], du
         nxt = chunks[n + 1][0]["os"] - 0.04 if n + 1 < len(chunks) else duration
         end = min(nxt, ch[-1]["oe"] + 0.35, duration)
         tokens = [clean_token(w["w"], c["uppercase"]) for w in ch]
-        size = ass.fit_size(brand, c["font"], " ".join(tokens), max_w, c["size"], 48)
+        size = ass.fit_size(brand, c["font"], " ".join(tokens), max_w - (2 * plate.get("pad_x", 34) if plate else 0),
+                            c["size"], 48)
+        pop = f"\\fscx90\\fscy90\\t(0,{c['pop_ms']},\\fscx100\\fscy100)"
+        bump = "\\fscx106\\fscy106\\t(0,90,\\fscx100\\fscy100)"   # each new word nudges the line
+
+        def plate_line(a, b, text, fx):
+            tw = ass.text_width(brand, c["font"], size, text)
+            pw, ph = tw + 2 * plate.get("pad_x", 34), size * 1.05 + 2 * plate.get("pad_y", 18)
+            out.append(ass.dialogue(a, b, f"{{\\an5\\pos({cx},{y - size * 0.04:.0f}){fx}\\p1\\bord0\\shad0"
+                                    f"\\1c{ass_rgb(col[plate.get('color', 'ink')])}"
+                                    f"\\1a{ass_alpha(plate.get('alpha', 0.88))}}}"
+                                    f"{ass.rounded_rect(pw, ph, plate.get('radius', 22))}", "Cap", 0))
+
+        if plate and not reveal:
+            plate_line(start, end, " ".join(tokens), pop)
         for i, w in enumerate(ch):
             a = start if i == 0 else max(start, w["os"])
             b = end if i == len(ch) - 1 else max(a + 0.01, ch[i + 1]["os"])
+            fx = pop if i == 0 else (bump if reveal else "")
+            # reveal: only the words spoken so far, re-centred on a plate that grows with them
+            shown = range(i + 1) if reveal else range(len(ch))
             parts = []
-            for j, (tok, wj) in enumerate(zip(tokens, ch)):
-                is_kw = norm(wj["w"]) in kw
-                if j == i:
+            for j in shown:
+                tok, wj = tokens[j], ch[j]
+                if lang_colors:
+                    color = col[lang_colors.get(wj.get("lang", "es"), c["text_color"])]
+                elif j == i:
                     color = col[c["active_color"]]
-                elif is_kw:
+                elif norm(wj["w"]) in kw:
                     color = col[c["keyword_color"]]
                 else:
                     color = col[c["text_color"]]
                 parts.append(f"{{\\1c{ass_rgb(color)}}}{ass.escape(tok)}")
-            pop = f"\\fscx90\\fscy90\\t(0,{c['pop_ms']},\\fscx100\\fscy100)" if i == 0 else ""
+            if plate and reveal:
+                plate_line(a, b, " ".join(tokens[j] for j in shown), fx)
             fs = f"\\fs{size}" if size != c["size"] else ""
-            out.append(ass.dialogue(a, b, f"{{\\an5\\pos({cx},{y}){fs}{pop}}}" + " ".join(parts), "Cap"))
+            out.append(ass.dialogue(a, b, f"{{\\an5\\pos({cx},{y}){fs}{fx}}}" + " ".join(parts), "Cap", 1))
     return "\n".join(out) + "\n"
 
 

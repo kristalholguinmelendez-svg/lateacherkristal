@@ -49,7 +49,8 @@ class G:
         return (f"\\an{an}\\move({x:.1f},{y + rise:.1f},{x:.1f},{y:.1f},{d},{d + i})"
                 f"\\alpha&HFF&\\t({d},{d + i},\\alpha{target})\\fad(0,{o})")
 
-    def card(self, t0, t1, x, y, w, h, fill="cream", alpha=None, delay=0, layer=1, border=None, appear=True):
+    def card(self, t0, t1, x, y, w, h, fill=None, alpha=None, delay=0, layer=1, border=None, appear=True):
+        fill = fill or self.g.get("card_fill", "cream")
         alpha = self.g["card_alpha"] if alpha is None else alpha
         r = self.g["card_radius"]
         kw = dict(delay=delay, appear=appear)
@@ -89,11 +90,11 @@ class G:
         for kind, rh in rows:
             mid = ty + rh / 2
             if kind == "word":
-                self.text(t0, t1, ass.W / 2, mid, word, size, "ink")
+                self.text(t0, t1, ass.W / 2, mid, word, size, self.g.get("card_text", "ink"))
             elif kind == "phon":
                 self.text(t0, t1, ass.W / 2, mid, phon, ls, "muted", "body", delay=0.12)
             else:
-                self.text(t0, t1, ass.W / 2, mid, label, ls, "accent", "strong", delay=0.18)
+                self.text(t0, t1, ass.W / 2, mid, label, ls, self.g.get("label_color", "accent"), "strong", delay=0.18)
             ty += rh
 
     def vs(self, t0, t1, gr, t_reveal):
@@ -218,15 +219,18 @@ class G:
                 pos += space
             if cur_span is not None:
                 spans.append(cur_span)
-            for x0, x1 in spans:  # highlighter marker sweeping left -> right under the key part
+            marker_alpha = self.g.get("marker_alpha", 0.85)
+            for x0, x1 in (spans if marker_alpha > 0 else []):  # marker sweeping left -> right under the key part
                 mh = size * 0.52
                 self.lines.append(ass.dialogue(
                     t0, t1, f"{{\\an7\\pos({x0 - 8:.1f},{ly - mh / 2 + size * 0.14:.1f})\\p1\\bord0"
-                            f"\\shad0\\1c{ass_rgb(self.c['gold'])}\\alpha&HFF&\\fscx0"
-                            f"\\t({i_ms},{i_ms + 1},\\alpha{ass_alpha(0.85)})\\t({d0},{d0 + 280},\\fscx100)"
+                            f"\\shad0\\1c{ass_rgb(self.c[self.g.get('marker', 'gold')])}\\alpha&HFF&\\fscx0"
+                            f"\\t({i_ms},{i_ms + 1},\\alpha{ass_alpha(marker_alpha)})\\t({d0},{d0 + 280},\\fscx100)"
                             f"\\fad(0,{self.g['out_ms']})}}{ass.rounded_rect(x1 - x0 + 16, mh, 10)}", "G", 3))
-            # highlighted part: dark ink over the gold marker (pink on gold lacks contrast)
-            parts = " ".join("".join(f"{{\\1c{ass_rgb(self.c['ink'])}}}{ass.escape(t)}"
+            # highlighted part: by default dark ink over the gold marker (pink on gold lacks contrast)
+            base_c = self.c[self.g.get("example_text", self.g.get("card_text", "ink"))]
+            hl_c = self.c[self.g.get("highlight_text", self.g.get("card_text", "ink"))]
+            parts = " ".join("".join(f"{{\\1c{ass_rgb(hl_c if hl else base_c)}}}{ass.escape(t)}"
                                      for t, hl in wd) for wd in ln)
             self.lines.append(ass.dialogue(t0, t1, f"{{{self.anim(ass.W / 2, ly, an=5)}\\fn{self.b['fonts']['strong']}"
                                            f"\\fs{size}\\bord0\\shad0}}" + parts, "G", 4))
@@ -250,6 +254,43 @@ class G:
                                        f"\\fscx80\\fscy80\\alpha&HFF&\\t(0,140,\\fscx104\\fscy104\\alpha&H00&)"
                                        f"\\t(140,240,\\fscx100\\fscy100)\\fad(0,{self.g['out_ms']})}}" + "".join(parts),
                                        "G", 7))
+
+    def header(self, t0, t1, gr, pulses):
+        """Persistent phrase plate (e.g. the expression of the lesson, from frame 0).
+
+        main line (English) + optional sub line (translation); it 'pulses' at each time in
+        `pulses` (e.g. when Kristal says the phrase)."""
+        L = self.b["layout"]
+        main, sub = gr["main"], gr.get("sub", "")
+        msize = ass.fit_size(self.b, "display", main, 880, gr.get("size", 88))
+        ssize = int(gr.get("sub_size", 46))
+        w = min(1000, max(ass.text_width(self.b, "display", msize, main),
+                          ass.text_width(self.b, "strong", ssize, sub)) + 90)
+        h = msize * 1.2 + (ssize * 1.35 if sub else 0) + 40
+        cy = gr.get("y", 0.125) * ass.H
+        x, y = (ass.W - w) / 2, cy - h / 2
+        my = y + 20 + msize * 0.6
+        sy = my + msize * 0.6 + ssize * 0.7
+        cuts = [t0] + sorted(t for t in pulses if t0 < t < t1) + [t1]
+        for k, (a, b) in enumerate(zip(cuts, cuts[1:])):
+            first = k == 0
+            # whole plate pops in on frame 0; later segments bounce instead of re-appearing
+            if first:
+                fx = "\\fscx70\\fscy70\\t(0,160,\\fscx106\\fscy106)\\t(160,260,\\fscx100\\fscy100)"
+            else:
+                fx = "\\t(0,110,\\fscx114\\fscy114)\\t(110,300,\\fscx100\\fscy100)"
+            fo = f"\\fad(0,{self.g['out_ms']})" if b == t1 else ""
+            # everything anchored at the plate centre (\\an5) so the pop/pulse scales from the middle
+            self.lines.append(ass.dialogue(a, b, f"{{\\an5\\pos({ass.W / 2:.1f},{cy:.1f}){fx}{fo}\\p1\\bord0\\shad0"
+                                           f"\\1c{ass_rgb(self.c[gr.get('fill', self.g.get('card_fill', 'cream'))])}"
+                                           f"\\1a{ass_alpha(gr.get('alpha', 0.92))}}}{ass.rounded_rect(w, h, 28)}", "G", 8))
+            for txt, size, ty, col, font in ((main, msize, my, gr.get("main_color", "green"), "display"),
+                                             (sub, ssize, sy, gr.get("sub_color", "red"), "strong")):
+                if not txt:
+                    continue
+                self.lines.append(ass.dialogue(a, b, f"{{\\an5\\pos({ass.W / 2:.1f},{ty:.1f}){fx}{fo}"
+                                               f"\\fn{self.b['fonts'][font]}\\fs{size}\\bord0\\shad0"
+                                               f"\\1c{ass_rgb(self.c[col])}}}{ass.escape(txt)}", "G", 9))
 
     def tag(self, t0, t1, gr):
         size = gr.get("size", self.g["label_size"])
@@ -278,6 +319,7 @@ def build_ass(graphics: list[dict], timeline, brand: dict) -> tuple[str, list[di
         t1 = min(t1, timeline.duration)
         t_rev = timeline.map(gr.get("reveal_src", gr["src"]), gr["reveal"], snap_forward=True) if gr.get("reveal") is not None else None
         kind = gr["type"]
+        pulses = []
         if kind == "word":
             g.word(t0, t1, gr)
         elif kind == "vs":
@@ -288,14 +330,19 @@ def build_ass(graphics: list[dict], timeline, brand: dict) -> tuple[str, list[di
             g.title(t0, t1, gr)
         elif kind == "tag":
             g.tag(t0, t1, gr)
+        elif kind == "header":
+            pulses = [t for t in (timeline.map(gr["src"], t) for t in gr.get("pulse", [])) if t is not None]
+            g.header(t0, t1, gr, pulses)
         else:
             raise ValueError(f"Tipo de gráfico desconocido: {kind}")
         placed.append({**gr, "o_start": round(t0, 3), "o_end": round(t1, 3),
-                       "o_reveal": round(t_rev, 3) if t_rev is not None else None})
+                       "o_reveal": round(t_rev, 3) if t_rev is not None else None,
+                       "o_pulses": [round(t, 3) for t in pulses] if kind == "header" else []})
     style = ass.style("G", brand["fonts"]["display"], 60, brand["colors"]["ink"])
     return ass.header(brand, [style]) + "\n".join(g.lines) + "\n", placed
 
 
 def graphic_text(gr: dict) -> str:
-    keys = ("word", "label", "phonetic", "left", "right", "left_tag", "right_tag", "text", "translation")
+    keys = ("word", "label", "phonetic", "left", "right", "left_tag", "right_tag", "text", "translation",
+            "main", "sub")
     return " ".join(str(gr.get(k, "")) for k in keys)

@@ -207,7 +207,7 @@ def cmd_render(a) -> None:
     pdir = Path(a.project)
     project = load_project(pdir)
     brand = load_brand()
-    for key in ("framing", "layout", "captions", "graphics", "audio", "look"):
+    for key in ("colors", "framing", "layout", "captions", "graphics", "audio", "look"):
         brand[key].update(project.get("brand_overrides", {}).get(key, {}))
     paths = source_paths(pdir, project)
     if not project.get("segments"):
@@ -224,6 +224,9 @@ def cmd_render(a) -> None:
 
     trs = transcripts(pdir, project)
     words_out = sorted((w for src in paths for w in tl.map_words(src, trs[src]["words"])), key=lambda w: w["os"])
+    for w in words_out:  # caption language per word, from source-time ranges (default Spanish)
+        w["lang"] = next((r["lang"] for r in project.get("captions", {}).get("lang_ranges", [])
+                          if r["src"] == w["src"] and r["s"] <= w["s"] <= r["e"]), "es")
     all_words = [w for tr in trs.values() for w in tr["words"]]
 
     # image: optional stabilisation, face tracks, measured look
@@ -275,6 +278,19 @@ def cmd_render(a) -> None:
         (exp / "captions.ass").write_text(CAP.build_ass(words_out, brand, cap_cfg, kws, tl.duration), encoding="utf-8")
         cap_path = exp / "captions.ass"
     (exp / f"{name}.srt").write_text(CAP.build_srt(words_out, tl.duration), encoding="utf-8")
+
+    sfx_cfg = project.get("sfx", {})
+    if sfx_cfg.get("enabled"):
+        from . import sfx as SFX
+        events = SFX.auto_events(tl, project.get("zooms", []), placed)
+        levels = {k: sfx_cfg.get(f"{k}_db", d) for k, d in (("whoosh", -17), ("pop", -15), ("ding", -14))}
+        voice_sfx = work / "voice_sfx.wav"
+        SFX.mix_into(voice, SFX.track(events, tl.duration, levels), voice_sfx)
+        voice = voice_sfx
+        counts = {k: sum(1 for _, e in events if e == k) for k in levels}
+        audio_log["efectos"] = (f"sintetizados en código (sin muestras de terceros): {counts['whoosh']} whoosh "
+                                f"({levels['whoosh']} dB), {counts['pop']} pop ({levels['pop']} dB), "
+                                f"{counts['ding']} ding ({levels['ding']} dB); nunca superan el techo de pico")
 
     out_main = exp / f"{name}_final.mp4"
     out_clean = exp / f"{name}_sin_subtitulos.mp4"

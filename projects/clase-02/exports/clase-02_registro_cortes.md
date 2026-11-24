@@ -13,11 +13,15 @@ FPS de salida 30.000 · 5 cortes · duración 16.00 s
 ## Zooms / punch-ins
 
 - `00:02.233` punch-in — la respuesta: change one's mind
+- `00:04.683` punch-in — changed my mind
+- `00:07.413` punch-in — tacos
 - `00:09.673` punch-in — changes her mind
+- `00:11.603` punch-in — college
+- `00:13.353` punch-in — cierre
 
 ## Gráficos en pantalla
 
-- `00:02.263–00:04.433` word: word="CHANGE ONE'S MIND"
+- `00:00.000–00:16.000` header: 
 - `00:04.473–00:08.133` example: text="I [changed my mind]. I don't want pizza, I want tacos."
 - `00:08.663–00:13.267` example: text='I hope she [changes her mind] about going to college that far away.'
 
@@ -29,6 +33,7 @@ FPS de salida 30.000 · 5 cortes · duración 16.00 s
 - compresor: 2.6:1, umbral -21 dB (moderado)
 - sonoridad: ganancia +3.7 dB + limitador de picos (4× sobremuestreo) → -14.0 LUFS, techo -1.5 dBTP (voz antes: -20.58 LUFS, pico -2.22 dBTP)
 - bordes: micro-fundidos de 12 ms en cada corte (sin clics)
+- efectos: sintetizados en código (sin muestras de terceros): 7 whoosh (-17 dB), 3 pop (-15 dB), 1 ding (-13 dB); nunca superan el techo de pico
 
 ## Imagen aplicada
 

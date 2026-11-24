@@ -15,7 +15,15 @@
   "transcript_fixes": {},
   "captions": {
     "enabled": true,
-    "keywords": []
+    "keywords": [],
+    "lang_ranges": [
+      {
+        "src": "A",
+        "s": 2.3,
+        "e": 14.1,
+        "lang": "en"
+      }
+    ]
   },
   "audio": {
     "denoise_strength": "auto",
@@ -76,25 +84,60 @@
   "zooms": [
     {
       "src": "A",
+      "at": 0.02,
+      "kind": "punch",
+      "why": "arranque: zoom desde el primer fotograma"
+    },
+    {
+      "src": "A",
       "at": 2.5,
       "kind": "punch",
       "why": "la respuesta: change one's mind"
     },
     {
       "src": "A",
+      "at": 5.45,
+      "kind": "punch",
+      "why": "changed my mind"
+    },
+    {
+      "src": "A",
+      "at": 8.18,
+      "kind": "punch",
+      "why": "tacos"
+    },
+    {
+      "src": "A",
       "at": 10.44,
       "kind": "punch",
       "why": "changes her mind"
+    },
+    {
+      "src": "A",
+      "at": 12.37,
+      "kind": "punch",
+      "why": "college"
+    },
+    {
+      "src": "A",
+      "at": 14.62,
+      "kind": "punch",
+      "why": "cierre"
     }
   ],
   "graphics": [
     {
-      "type": "word",
+      "type": "header",
       "src": "A",
-      "start": 2.53,
-      "end": 5.2,
-      "word": "CHANGE ONE'S MIND",
-      "label": "cambiar de opinión"
+      "start": 0.0,
+      "dur": 60,
+      "main": "CHANGE ONE'S MIND",
+      "sub": "cambiar de opinión",
+      "pulse": [
+        2.53
+      ],
+      "y": 0.115,
+      "sub_size": 54
     },
     {
       "type": "example",
@@ -163,5 +206,50 @@
       "role": "payoff",
       "framing": "close"
     }
-  ]
+  ],
+  "brand_overrides": {
+    "colors": {
+      "black": "#000000",
+      "red": "#FF3B3B",
+      "green": "#2BE36B"
+    },
+    "graphics": {
+      "card_fill": "black",
+      "card_alpha": 0.9,
+      "card_text": "green",
+      "label_color": "red",
+      "example_text": "green",
+      "highlight_text": "red",
+      "marker_alpha": 0,
+      "in_ms": 160,
+      "out_ms": 120
+    },
+    "captions": {
+      "plate": {
+        "color": "black",
+        "alpha": 0.85,
+        "pad_x": 30,
+        "pad_y": 16,
+        "radius": 20
+      },
+      "lang_colors": {
+        "es": "red",
+        "en": "green"
+      },
+      "reveal": true,
+      "size": 80,
+      "pop_ms": 80
+    },
+    "framing": {
+      "punch": 0.12,
+      "punch_in_ms": 170,
+      "punch_out_ms": 320
+    }
+  },
+  "sfx": {
+    "enabled": true,
+    "whoosh_db": -17,
+    "pop_db": -15,
+    "ding_db": -13
+  }
 }

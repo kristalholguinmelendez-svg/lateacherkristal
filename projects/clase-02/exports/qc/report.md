@@ -7,7 +7,7 @@
 - ✅ clase-02_sin_subtitulos.mp4: H.264 1080×1920 @ 30.000 fps, pix_fmt yuv420p
 - ✅ clase-02_sin_subtitulos.mp4: duración 16.00 s (línea de tiempo 16.00 s)
 - ✅ moov al inicio (faststart): reproducción inmediata en móvil
-- ✅ Sonoridad -14.0 LUFS, pico -1.7 dBFS, LRA 2.4 LU
+- ✅ Sonoridad -14.0 LUFS, pico -1.4 dBFS, LRA 2.5 LU
 - ✅ Sin pausas incómodas (> 0.75 s)
 - ✅ Sin pantallas negras
 - ✅ Todos los cortes caen en zonas de baja energía (sin palabras cortadas)

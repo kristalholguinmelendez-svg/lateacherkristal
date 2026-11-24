@@ -85,7 +85,7 @@ class Timeline:
             for w in words:
                 mid = (w["s"] + w["e"]) / 2
                 if a <= mid < b:
-                    out.append({**w, "os": oa + max(w["s"], a) - a, "oe": oa + min(w["e"], b) - a,
+                    out.append({**w, "src": src, "os": oa + max(w["s"], a) - a, "oe": oa + min(w["e"], b) - a,
                                 "clip": c.index})
         out.sort(key=lambda w: w["os"])
         return out
