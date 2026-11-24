@@ -49,7 +49,12 @@
   },
   "audio": {
     "denoise_strength": "auto",
-    "music": null
+    "music": {
+      "generate": "gfunk",
+      "bpm": 92,
+      "seed": 7,
+      "db": -28
+    }
   },
   "look": {
     "auto": true,

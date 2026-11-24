@@ -31,7 +31,8 @@ FPS de salida 30.000 · 5 cortes · duración 16.00 s
 - eq: -1.5 dB @220 Hz, +2.5 dB @3.2 kHz, +1 dB @9.5 kHz
 - deesser: suave
 - compresor: 2.6:1, umbral -21 dB (moderado)
-- sonoridad: ganancia +3.7 dB + limitador de picos (4× sobremuestreo) → -14.0 LUFS, techo -1.5 dBTP (voz antes: -20.58 LUFS, pico -2.22 dBTP)
+- musica: original generada en código (gfunk, 92 BPM) a -28 dB, con ducking (baja aún más cuando hablas)
+- sonoridad: ganancia +3.7 dB + limitador de picos (4× sobremuestreo) → -14.0 LUFS, techo -1.5 dBTP (voz antes: -20.58 LUFS, pico -2.20 dBTP)
 - bordes: micro-fundidos de 12 ms en cada corte (sin clics)
 - efectos: sintetizados en código (sin muestras de terceros): 7 whoosh (-17 dB), 3 pop (-15 dB), 1 ding (-13 dB); nunca superan el techo de pico
 

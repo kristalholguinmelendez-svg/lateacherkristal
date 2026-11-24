@@ -120,15 +120,25 @@ def build_audio(tl: Timeline, paths: dict, brand: dict, project: dict, hints: di
     music = acfg.get("music")
     if music:
         mi = len(used)
-        inputs += ["-stream_loop", "-1", "-i", str(Path(project["_dir"]) / music["file"])]
+        if music.get("generate"):
+            from .music import gfunk
+            mpath = gfunk(work / "music_generated.wav", tl.duration + 0.1, bpm=music.get("bpm", 92),
+                          seed=music.get("seed", 7))
+            mname = f"original generada en código ({music['generate']}, {music.get('bpm', 92)} BPM)"
+        else:
+            mpath = Path(project["_dir"]) / music["file"]
+            mname = music["file"]
+        inputs += ["-stream_loop", "-1", "-i", str(mpath)]
         db = music.get("db", -26)
-        fc.append(f"[voice]asplit=2[v1][key]")
+        fo = max(0.0, tl.duration - 1.2)
+        fc.append("[voice]asplit=2[v1][key]")
         fc.append(f"[{mi}:a]aresample=48000,aformat=channel_layouts=mono,volume={db}dB,"
-                  f"atrim=0:{tl.duration:.3f}[m0]")
-        fc.append("[m0][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[mduck]")
+                  f"atrim=0:{tl.duration:.3f},afade=t=out:st={fo:.3f}:d=1.2[m0]")
+        # ducking: the music drops further whenever Kristal speaks
+        fc.append("[m0][key]sidechaincompress=threshold=0.02:ratio=8:attack=15:release=350:makeup=1[mduck]")
         fc.append("[v1][mduck]amix=inputs=2:duration=first:normalize=0[mixed]")
         last = "[mixed]"
-        applied["musica"] = f"{music['file']} a {db} dB con ducking bajo la voz"
+        applied["musica"] = f"{mname} a {db} dB, con ducking (baja aún más cuando hablas)"
     stage1 = work / "voice_stage1.wav"
     run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc), "-map", last,
          "-t", f"{tl.duration:.6f}", "-c:a", "pcm_f32le", str(stage1)])
