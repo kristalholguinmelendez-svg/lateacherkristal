@@ -1,0 +1,53 @@
+[Script Info]
+; LA TEACHER KRISTAL — generado por kristal
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Black,74,&H00FFFFFF,&H00FFFFFF,&H002E1115,&H662E1115,0,0,0,0,100,100,0,0,1,6,3,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:00.34,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}¿CÓMO {\1c&HFFFFFF&}DICES {\1c&HFFFFFF&}EN
+Dialogue: 0,0:00:00.34,0:00:00.66,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}¿CÓMO {\1c&H3DC8FF&}DICES {\1c&HFFFFFF&}EN
+Dialogue: 0,0:00:00.66,0:00:00.70,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}¿CÓMO {\1c&HFFFFFF&}DICES {\1c&H3DC8FF&}EN
+Dialogue: 0,0:00:00.70,0:00:01.14,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}INGLÉS {\1c&HFFFFFF&}CAMBIAR {\1c&HFFFFFF&}DE
+Dialogue: 0,0:00:01.14,0:00:01.54,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}INGLÉS {\1c&H3DC8FF&}CAMBIAR {\1c&HFFFFFF&}DE
+Dialogue: 0,0:00:01.54,0:00:01.58,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}INGLÉS {\1c&HFFFFFF&}CAMBIAR {\1c&H3DC8FF&}DE
+Dialogue: 0,0:00:01.58,0:00:02.23,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}OPINIÓN?
+Dialogue: 0,0:00:02.23,0:00:02.99,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}CHANGE {\1c&HFFFFFF&}ONE'S {\1c&H8B4FFF&}MIND
+Dialogue: 0,0:00:02.99,0:00:03.47,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&H8B4FFF&}CHANGE {\1c&H3DC8FF&}ONE'S {\1c&H8B4FFF&}MIND
+Dialogue: 0,0:00:03.47,0:00:04.38,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&H8B4FFF&}CHANGE {\1c&HFFFFFF&}ONE'S {\1c&H3DC8FF&}MIND
+Dialogue: 0,0:00:04.43,0:00:04.71,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}I {\1c&H8B4FFF&}CHANGED {\1c&HFFFFFF&}MY
+Dialogue: 0,0:00:04.71,0:00:05.27,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&H3DC8FF&}CHANGED {\1c&HFFFFFF&}MY
+Dialogue: 0,0:00:05.27,0:00:05.39,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&H8B4FFF&}CHANGED {\1c&H3DC8FF&}MY
+Dialogue: 0,0:00:05.39,0:00:05.87,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}MIND
+Dialogue: 0,0:00:05.87,0:00:06.07,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}I {\1c&HFFFFFF&}DON'T {\1c&HFFFFFF&}WANT
+Dialogue: 0,0:00:06.07,0:00:06.31,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&H3DC8FF&}DON'T {\1c&HFFFFFF&}WANT
+Dialogue: 0,0:00:06.31,0:00:06.51,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&HFFFFFF&}DON'T {\1c&H3DC8FF&}WANT
+Dialogue: 0,0:00:06.51,0:00:07.07,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}PIZZA
+Dialogue: 0,0:00:07.07,0:00:07.19,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}I {\1c&HFFFFFF&}WANT {\1c&HFFFFFF&}TACOS
+Dialogue: 0,0:00:07.19,0:00:07.43,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&H3DC8FF&}WANT {\1c&HFFFFFF&}TACOS
+Dialogue: 0,0:00:07.43,0:00:08.62,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&HFFFFFF&}WANT {\1c&H3DC8FF&}TACOS
+Dialogue: 0,0:00:08.62,0:00:08.82,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}I {\1c&HFFFFFF&}HOPE {\1c&HFFFFFF&}SHE
+Dialogue: 0,0:00:08.82,0:00:09.38,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&H3DC8FF&}HOPE {\1c&HFFFFFF&}SHE
+Dialogue: 0,0:00:09.38,0:00:09.66,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}I {\1c&HFFFFFF&}HOPE {\1c&H3DC8FF&}SHE
+Dialogue: 0,0:00:09.66,0:00:10.26,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}CHANGES {\1c&HFFFFFF&}HER {\1c&H8B4FFF&}MIND
+Dialogue: 0,0:00:10.26,0:00:10.50,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&H8B4FFF&}CHANGES {\1c&H3DC8FF&}HER {\1c&H8B4FFF&}MIND
+Dialogue: 0,0:00:10.50,0:00:10.78,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&H8B4FFF&}CHANGES {\1c&HFFFFFF&}HER {\1c&H3DC8FF&}MIND
+Dialogue: 0,0:00:10.78,0:00:11.14,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}ABOUT {\1c&HFFFFFF&}GOING {\1c&HFFFFFF&}TO
+Dialogue: 0,0:00:11.14,0:00:11.46,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}ABOUT {\1c&H3DC8FF&}GOING {\1c&HFFFFFF&}TO
+Dialogue: 0,0:00:11.46,0:00:11.58,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}ABOUT {\1c&HFFFFFF&}GOING {\1c&H3DC8FF&}TO
+Dialogue: 0,0:00:11.58,0:00:12.18,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}COLLEGE {\1c&HFFFFFF&}THAT {\1c&HFFFFFF&}FAR
+Dialogue: 0,0:00:12.18,0:00:12.42,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}COLLEGE {\1c&H3DC8FF&}THAT {\1c&HFFFFFF&}FAR
+Dialogue: 0,0:00:12.42,0:00:12.70,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}COLLEGE {\1c&HFFFFFF&}THAT {\1c&H3DC8FF&}FAR
+Dialogue: 0,0:00:12.70,0:00:13.34,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}AWAY
+Dialogue: 0,0:00:13.34,0:00:14.38,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}COMPRENDO
+Dialogue: 0,0:00:14.38,0:00:14.74,Cap,,0,0,0,,{\an5\pos(540,1497)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\1c&H3DC8FF&}MI {\1c&HFFFFFF&}AMIGO
+Dialogue: 0,0:00:14.74,0:00:15.65,Cap,,0,0,0,,{\an5\pos(540,1497)}{\1c&HFFFFFF&}MI {\1c&H3DC8FF&}AMIGO

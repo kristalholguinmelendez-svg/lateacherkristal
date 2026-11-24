@@ -59,32 +59,40 @@ def correction(stats: dict, brand: dict, vinfo: dict, overrides: dict | None = N
         desc["hdr"] = "HDR (HLG/PQ) convertido a SDR BT.709 con tonemap hable"
 
     y, lo, hi = stats.get("YAVG") or TARGET_Y, stats.get("YLOW") or 16, stats.get("YHIGH") or 235
-    # Exposure via midtone gamma (keeps highlights from clipping), small brightness lift for very dark clips.
-    gamma = float(np.clip((TARGET_Y / max(y, 1)) ** 0.55, 0.88, 1.22))
-    bright = float(np.clip((TARGET_Y - y) / 255 * 0.25, -L["max_brightness"], L["max_brightness"]))
+    # Only fix real problems. Frame averages are dominated by walls and clothes, so a
+    # well-lit shot is left alone: no "normalising" exposure, contrast or skin tone.
+    gamma = 1.0
+    if y < 85:                       # clearly underexposed: lift midtones
+        gamma = float(np.clip((100 / max(y, 1)) ** 0.5, 1.0, 1.22))
+    elif y > 180 and hi >= 233:      # clearly overexposed with clipping: pull midtones down
+        gamma = float(np.clip((160 / y) ** 0.5, 0.88, 1.0))
+    bright = 0.0
     spread = hi - lo
-    contrast = float(np.clip(1.0 + (180 - spread) / 600, 0.97, L["max_contrast"]))
+    contrast = float(np.clip(1.0 + (110 - spread) / 500, 1.0, L["max_contrast"])) if spread < 110 else 1.0
     sat_avg = stats.get("SATAVG") or 30
-    sat = float(np.clip(1.0 + (30 - sat_avg) / 150, 0.96, L["max_saturation"]))
+    sat = float(np.clip(1.0 + (14 - sat_avg) / 100, 1.0, L["max_saturation"])) if sat_avg < 14 else 1.0
     gamma, bright, contrast, sat = (ov.get(k, v) for k, v in
                                     (("gamma", gamma), ("brightness", bright), ("contrast", contrast), ("saturation", sat)))
-    if any(abs(v - d) > 0.01 for v, d in ((gamma, 1), (bright, 0), (contrast, 1), (sat, 1))):
+    if any(abs(v - d) > 0.005 for v, d in ((gamma, 1), (bright, 0), (contrast, 1), (sat, 1))):
         chain.append(f"eq=gamma={gamma:.3f}:brightness={bright:.3f}:contrast={contrast:.3f}:saturation={sat:.3f}")
-    desc["exposicion"] = f"luma media {y:.0f} → gamma {gamma:.2f}, brillo {bright:+.3f}"
-    desc["contraste"] = f"rango {lo:.0f}-{hi:.0f} → contraste {contrast:.2f}"
-    desc["saturacion"] = f"sat media {sat_avg:.0f} → ×{sat:.2f}"
+    desc["exposicion"] = (f"luma media {y:.0f} → gamma {gamma:.2f}" if gamma != 1 else
+                          f"luma media {y:.0f}: bien expuesta, sin cambio")
+    desc["contraste"] = (f"rango {lo:.0f}-{hi:.0f} → contraste {contrast:.2f}" if contrast != 1 else
+                         f"rango {lo:.0f}-{hi:.0f}: correcto, sin cambio")
+    desc["saturacion"] = f"sat media {sat_avg:.0f} → ×{sat:.2f}" if sat != 1 else f"sat media {sat_avg:.0f}: sin cambio"
 
-    # White balance: only correct real casts, and only half of the measured deviation.
+    # White balance: only strong casts (mixed or wrong lighting), and only half the deviation.
+    # A warm room stays warm: that is the real light, not an error.
     u, v = stats.get("UAVG") or TARGET_U, stats.get("VAVG") or TARGET_V
     du, dv = u - TARGET_U, v - TARGET_V
-    bm = float(np.clip(-du / 128 * 0.5, -0.06, 0.06)) if abs(du) > 4 else 0.0
-    rm = float(np.clip(-dv / 128 * 0.5, -0.06, 0.06)) if abs(dv) > 4 else 0.0
+    bm = float(np.clip(-du / 128 * 0.5, -0.06, 0.06)) if abs(du) > 10 else 0.0
+    rm = float(np.clip(-dv / 128 * 0.5, -0.06, 0.06)) if abs(dv) > 10 else 0.0
     bm, rm = ov.get("blue_mid", bm), ov.get("red_mid", rm)
     if bm or rm:
         chain.append(f"colorbalance=rm={rm:.3f}:bm={bm:.3f}:pl=1")
         desc["balance_blancos"] = f"U {u:.0f}, V {v:.0f} → rojo medios {rm:+.3f}, azul medios {bm:+.3f}"
     else:
-        desc["balance_blancos"] = f"neutral (U {u:.0f}, V {v:.0f}), sin cambio"
+        desc["balance_blancos"] = f"sin dominante fuerte (U {u:.0f}, V {v:.0f}), sin cambio"
 
     noise = stats.get("noise", 0)
     if noise > 2.2 or ov.get("denoise"):

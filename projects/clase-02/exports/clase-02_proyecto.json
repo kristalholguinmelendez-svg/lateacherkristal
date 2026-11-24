@@ -1,0 +1,167 @@
+{
+  "name": "clase-02",
+  "title": "Change one's mind",
+  "language": "es",
+  "sources": {
+    "A": "footage/clase02.mov"
+  },
+  "vocab": [
+    "change",
+    "changed",
+    "changes",
+    "mind"
+  ],
+  "approved_terms": [],
+  "transcript_fixes": {},
+  "captions": {
+    "enabled": true,
+    "keywords": []
+  },
+  "audio": {
+    "denoise_strength": "auto",
+    "music": null
+  },
+  "look": {
+    "auto": true,
+    "stabilize": false,
+    "overrides": {}
+  },
+  "segments": [
+    {
+      "src": "A",
+      "in": 0.04,
+      "out": 2.15,
+      "role": "hook",
+      "framing": "close",
+      "text": "¿Cómo dices en inglés cambiar de opinión?",
+      "phrase": "b1"
+    },
+    {
+      "src": "A",
+      "in": 2.38,
+      "out": 4.67,
+      "role": "curiosity",
+      "framing": "medium",
+      "text": "Change one's mind.",
+      "phrase": "b2"
+    },
+    {
+      "src": "A",
+      "in": 5.16,
+      "out": 9.35,
+      "role": "explanation",
+      "framing": "wide",
+      "text": "I changed my mind. I don't want pizza, I want tacos.",
+      "phrase": "b3"
+    },
+    {
+      "src": "A",
+      "in": 9.35,
+      "out": 14.02,
+      "role": "explanation",
+      "framing": "medium",
+      "text": "I hope she changes her mind about going to college that far away.",
+      "phrase": "b4"
+    },
+    {
+      "src": "A",
+      "in": 14.54,
+      "out": 16.66,
+      "role": "payoff",
+      "framing": "close",
+      "text": "Comprendo, mi amigo.",
+      "phrase": "b5"
+    }
+  ],
+  "zooms": [
+    {
+      "src": "A",
+      "at": 2.5,
+      "kind": "punch",
+      "why": "la respuesta: change one's mind"
+    },
+    {
+      "src": "A",
+      "at": 10.44,
+      "kind": "punch",
+      "why": "changes her mind"
+    }
+  ],
+  "graphics": [
+    {
+      "type": "word",
+      "src": "A",
+      "start": 2.53,
+      "end": 5.2,
+      "word": "CHANGE ONE'S MIND",
+      "label": "cambiar de opinión"
+    },
+    {
+      "type": "example",
+      "src": "A",
+      "start": 5.24,
+      "end": 8.9,
+      "text": "I [changed my mind]. I don't want pizza, I want tacos."
+    },
+    {
+      "type": "example",
+      "src": "A",
+      "start": 9.43,
+      "end": 14.3,
+      "text": "I hope she [changes her mind] about going to college that far away."
+    }
+  ],
+  "audio_hints": {
+    "A": {
+      "noise_db": -58.2,
+      "speech_db": -22.0,
+      "hum_hz": null
+    }
+  },
+  "asr_model_dir": "assets/models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+  "output": {
+    "tail_hold": 0.6
+  },
+  "plan": [
+    {
+      "id": "b1",
+      "src": "A",
+      "from": 0.05,
+      "to": 1.7,
+      "role": "hook",
+      "framing": "close"
+    },
+    {
+      "id": "b2",
+      "src": "A",
+      "from": 2.53,
+      "to": 3.8,
+      "role": "curiosity",
+      "framing": "medium"
+    },
+    {
+      "id": "b3",
+      "src": "A",
+      "from": 5.24,
+      "to": 8.25,
+      "role": "explanation",
+      "framing": "wide"
+    },
+    {
+      "id": "b4",
+      "src": "A",
+      "from": 9.43,
+      "to": 13.55,
+      "role": "explanation",
+      "framing": "medium"
+    },
+    {
+      "id": "b5",
+      "src": "A",
+      "from": 14.64,
+      "to": 16.05,
+      "role": "payoff",
+      "framing": "close"
+    }
+  ]
+}

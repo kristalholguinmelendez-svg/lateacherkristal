@@ -164,16 +164,28 @@ class G:
                     words[-1].append((piece, hl))
         words = [w for w in words if w]
         plain = lambda w: "".join(t for t, _ in w)
-        lines, cur = [], []
-        for w in words:
-            trial = " ".join(plain(x) for x in cur + [w])
-            if cur and ass.text_width(self.b, "strong", size, trial) > max_w:
-                lines.append(cur)
-                cur = [w]
-            else:
-                cur.append(w)
-        if cur:
-            lines.append(cur)
+        def wrap(limit):
+            out, cur = [], []
+            for w in words:
+                trial = " ".join(plain(x) for x in cur + [w])
+                if cur and ass.text_width(self.b, "strong", size, trial) > limit:
+                    out.append(cur)
+                    cur = [w]
+                else:
+                    cur.append(w)
+            if cur:
+                out.append(cur)
+            return out
+        lines = wrap(max_w)
+        if len(lines) > 1:  # balance the lines: no orphan word on the last one
+            total = ass.text_width(self.b, "strong", size, " ".join(plain(w) for w in words))
+            limit = total / len(lines)
+            while limit < max_w:
+                cand = wrap(limit)
+                if len(cand) == len(lines):
+                    lines = cand
+                    break
+                limit += 10
         tr = gr.get("translation", "")
         tr_size = int(size * 0.62)
         lh = size * 1.3
@@ -189,20 +201,32 @@ class G:
         for li, ln in enumerate(lines):
             ly = y + 38 + lh * li + lh / 2
             pos = (ass.W - widths[li]) / 2
-            for wd in ln:
+            spans, cur_span = [], None   # merge highlighted pieces (and the spaces between them)
+            for wi, wd in enumerate(ln):
                 for piece, hl in wd:
                     pw = ass.text_width(self.b, "strong", size, piece)
-                    if hl:  # highlighter marker sweeping left -> right under the key part
-                        mh = size * 0.52
-                        self.lines.append(ass.dialogue(
-                            t0, t1, f"{{\\an7\\pos({pos - 8:.1f},{ly - mh / 2 + size * 0.14:.1f})\\p1\\bord0"
-                                    f"\\shad0\\1c{ass_rgb(self.c['gold'])}\\alpha&HFF&\\fscx0"
-                                    f"\\t({i_ms},{i_ms + 1},\\alpha{ass_alpha(0.85)})\\t({d0},{d0 + 280},\\fscx100)"
-                                    f"\\fad(0,{self.g['out_ms']})}}{ass.rounded_rect(pw + 16, mh, 10)}", "G", 3))
+                    if hl:
+                        cur_span = [pos, pos + pw] if cur_span is None else [cur_span[0], pos + pw]
+                    elif cur_span is not None:
+                        spans.append(cur_span)
+                        cur_span = None
                     pos += pw
+                nxt_hl = wi + 1 < len(ln) and ln[wi + 1][0][1]
+                if cur_span is not None and not nxt_hl:
+                    spans.append(cur_span)
+                    cur_span = None
                 pos += space
+            if cur_span is not None:
+                spans.append(cur_span)
+            for x0, x1 in spans:  # highlighter marker sweeping left -> right under the key part
+                mh = size * 0.52
+                self.lines.append(ass.dialogue(
+                    t0, t1, f"{{\\an7\\pos({x0 - 8:.1f},{ly - mh / 2 + size * 0.14:.1f})\\p1\\bord0"
+                            f"\\shad0\\1c{ass_rgb(self.c['gold'])}\\alpha&HFF&\\fscx0"
+                            f"\\t({i_ms},{i_ms + 1},\\alpha{ass_alpha(0.85)})\\t({d0},{d0 + 280},\\fscx100)"
+                            f"\\fad(0,{self.g['out_ms']})}}{ass.rounded_rect(x1 - x0 + 16, mh, 10)}", "G", 3))
             # highlighted part: dark ink over the gold marker (pink on gold lacks contrast)
-            parts = " ".join("".join(f"{{\\1c{ass_rgb(self.c['ink'])}{'\\b1' if hl else ''}}}{ass.escape(t)}"
+            parts = " ".join("".join(f"{{\\1c{ass_rgb(self.c['ink'])}}}{ass.escape(t)}"
                                      for t, hl in wd) for wd in ln)
             self.lines.append(ass.dialogue(t0, t1, f"{{{self.anim(ass.W / 2, ly, an=5)}\\fn{self.b['fonts']['strong']}"
                                            f"\\fs{size}\\bord0\\shad0}}" + parts, "G", 4))

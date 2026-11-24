@@ -1,0 +1,31 @@
+[Script Info]
+; LA TEACHER KRISTAL — generado por kristal
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: G,Inter Black,60,&H002E1115,&H002E1115,&H00000000,&HFF000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:02.26,0:00:04.43,G,,0,0,0,,{\an7\move(64.0,1166.6,64.0,1130.6,0,220)\alpha&HFF&\t(0,220,\alpha&HB6&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 34 0 l 926 0 b 944.8 0 960 15.2 960 34 l 960 205.6 b 960 224.4 944.8 239.6 926 239.6 l 34 239.6 b 15.2 239.6 0 224.4 0 205.6 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 2,0:00:02.26,0:00:04.43,G,,0,0,0,,{\an7\move(60.0,1154.6,60.0,1118.6,0,220)\alpha&HFF&\t(0,220,\alpha&H0A&)\fad(0,160)\p1\bord0\shad0\1c&HEEF8FF&}m 34 0 l 926 0 b 944.8 0 960 15.2 960 34 l 960 205.6 b 960 224.4 944.8 239.6 926 239.6 l 34 239.6 b 15.2 239.6 0 224.4 0 205.6 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 3,0:00:02.26,0:00:04.43,G,,0,0,0,,{\an5\move(540.0,1242.5,540.0,1206.5,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter Black\fs92\bord0\shad0\1c&H2E1115&}CHANGE ONE'S MIND
+Dialogue: 3,0:00:02.26,0:00:04.43,G,,0,0,0,,{\an5\move(540.0,1327.3,540.0,1291.3,180,400)\alpha&HFF&\t(180,400,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs44\bord0\shad0\1c&H8B4FFF&}cambiar de opinión
+Dialogue: 1,0:00:04.47,0:00:08.13,G,,0,0,0,,{\an7\move(149.7,1167.8,149.7,1131.8,0,220)\alpha&HFF&\t(0,220,\alpha&HB6&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 34 0 l 754.6 0 b 773.4 0 788.6 15.2 788.6 34 l 788.6 203.2 b 788.6 222 773.4 237.2 754.6 237.2 l 34 237.2 b 15.2 237.2 0 222 0 203.2 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 2,0:00:04.47,0:00:08.13,G,,0,0,0,,{\an7\move(145.7,1155.8,145.7,1119.8,0,220)\alpha&HFF&\t(0,220,\alpha&H0A&)\fad(0,160)\p1\bord0\shad0\1c&HEEF8FF&}m 34 0 l 754.6 0 b 773.4 0 788.6 15.2 788.6 34 l 788.6 203.2 b 788.6 222 773.4 237.2 754.6 237.2 l 34 237.2 b 15.2 237.2 0 222 0 203.2 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 3,0:00:04.47,0:00:08.13,G,,0,0,0,,{\an7\pos(228.4,1190.7)\p1\bord0\shad0\1c&H3DC8FF&\alpha&HFF&\fscx0\t(220,221,\alpha&H26&)\t(350,630,\fscx100)\fad(0,160)}m 10 0 l 453.7 0 b 459.2 0 463.7 4.5 463.7 10 l 463.7 22.2 b 463.7 27.8 459.2 32.2 453.7 32.2 l 10 32.2 b 4.5 32.2 0 27.8 0 22.2 l 0 10 b 0 4.5 4.5 0 10 0
+Dialogue: 4,0:00:04.47,0:00:08.13,G,,0,0,0,,{\an5\move(540.0,1234.1,540.0,1198.1,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs62\bord0\shad0}{\1c&H2E1115&}I {\1c&H2E1115&}changed {\1c&H2E1115&}my {\1c&H2E1115&}mind{\1c&H2E1115&}. {\1c&H2E1115&}I {\1c&H2E1115&}don't
+Dialogue: 4,0:00:04.47,0:00:08.13,G,,0,0,0,,{\an5\move(540.0,1314.7,540.0,1278.7,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs62\bord0\shad0}{\1c&H2E1115&}want {\1c&H2E1115&}pizza, {\1c&H2E1115&}I {\1c&H2E1115&}want {\1c&H2E1115&}tacos.
+Dialogue: 1,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an7\move(188.7,1127.5,188.7,1091.5,0,220)\alpha&HFF&\t(0,220,\alpha&HB6&)\fad(0,160)\p1\bord0\shad0\1c&H2E1115&\blur16}m 34 0 l 676.6 0 b 695.4 0 710.6 15.2 710.6 34 l 710.6 283.8 b 710.6 302.6 695.4 317.8 676.6 317.8 l 34 317.8 b 15.2 317.8 0 302.6 0 283.8 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 2,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an7\move(184.7,1115.5,184.7,1079.5,0,220)\alpha&HFF&\t(0,220,\alpha&H0A&)\fad(0,160)\p1\bord0\shad0\1c&HEEF8FF&}m 34 0 l 676.6 0 b 695.4 0 710.6 15.2 710.6 34 l 710.6 283.8 b 710.6 302.6 695.4 317.8 676.6 317.8 l 34 317.8 b 15.2 317.8 0 302.6 0 283.8 l 0 34 b 0 15.2 15.2 0 34 0
+Dialogue: 3,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an7\pos(509.1,1150.4)\p1\bord0\shad0\1c&H3DC8FF&\alpha&HFF&\fscx0\t(220,221,\alpha&H26&)\t(350,630,\fscx100)\fad(0,160)}m 10 0 l 319.2 0 b 324.7 0 329.2 4.5 329.2 10 l 329.2 22.2 b 329.2 27.8 324.7 32.2 319.2 32.2 l 10 32.2 b 4.5 32.2 0 27.8 0 22.2 l 0 10 b 0 4.5 4.5 0 10 0
+Dialogue: 4,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an5\move(540.0,1193.8,540.0,1157.8,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs62\bord0\shad0}{\1c&H2E1115&}I {\1c&H2E1115&}hope {\1c&H2E1115&}she {\1c&H2E1115&}changes {\1c&H2E1115&}her
+Dialogue: 3,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an7\pos(281.9,1231.0)\p1\bord0\shad0\1c&H3DC8FF&\alpha&HFF&\fscx0\t(220,221,\alpha&H26&)\t(350,630,\fscx100)\fad(0,160)}m 10 0 l 132.6 0 b 138.2 0 142.6 4.5 142.6 10 l 142.6 22.2 b 142.6 27.8 138.2 32.2 132.6 32.2 l 10 32.2 b 4.5 32.2 0 27.8 0 22.2 l 0 10 b 0 4.5 4.5 0 10 0
+Dialogue: 4,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an5\move(540.0,1274.4,540.0,1238.4,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs62\bord0\shad0}{\1c&H2E1115&}mind {\1c&H2E1115&}about {\1c&H2E1115&}going {\1c&H2E1115&}to
+Dialogue: 4,0:00:08.66,0:00:13.27,G,,0,0,0,,{\an5\move(540.0,1355.0,540.0,1319.0,0,220)\alpha&HFF&\t(0,220,\alpha&H00&)\fad(0,160)\fnInter ExtraBold\fs62\bord0\shad0}{\1c&H2E1115&}college {\1c&H2E1115&}that {\1c&H2E1115&}far {\1c&H2E1115&}away.
