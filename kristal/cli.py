@@ -275,7 +275,10 @@ def cmd_render(a) -> None:
     cap_path = None
     if cap_cfg.get("enabled", True):
         kws = project.get("vocab", []) + cap_cfg.get("keywords", [])
-        (exp / "captions.ass").write_text(CAP.build_ass(words_out, brand, cap_cfg, kws, tl.duration), encoding="utf-8")
+        # optional: no captions while a card already shows the same sentence (keeps text off the face)
+        hide = [(g["o_start"], g["o_end"]) for g in placed if g["type"] in cap_cfg.get("hide_during", [])]
+        cap_words = [w for w in words_out if not any(a - 0.05 <= w["os"] < b for a, b in hide)]
+        (exp / "captions.ass").write_text(CAP.build_ass(cap_words, brand, cap_cfg, kws, tl.duration), encoding="utf-8")
         cap_path = exp / "captions.ass"
     (exp / f"{name}.srt").write_text(CAP.build_srt(words_out, tl.duration), encoding="utf-8")
 

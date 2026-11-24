@@ -188,11 +188,13 @@ class G:
                     break
                 limit += 10
         tr = gr.get("translation", "")
-        tr_size = int(size * 0.62)
+        tr_size = int(size * self.g.get("translation_scale", 0.62))
+        tr_lines = [" ".join(l) for l in ass.wrap_balanced(self.b, "body", tr_size, tr.split(), max_w)] if tr else []
+        tr_lh = tr_size * 1.3
         lh = size * 1.3
         widths = [ass.text_width(self.b, "strong", size, " ".join(plain(w) for w in ln)) for ln in lines]
-        w = min(980, max(widths + [ass.text_width(self.b, "body", tr_size, tr) if tr else 0]) + 130)
-        h = lh * len(lines) + 76 + (tr_size * 1.7 if tr else 0)
+        w = min(980, max(widths + [ass.text_width(self.b, "body", tr_size, t) for t in tr_lines]) + 130)
+        h = lh * len(lines) + 76 + (tr_lh * len(tr_lines) + tr_size * 0.5 if tr_lines else 0)
         cy = L["graphics_center_y"] * ass.H
         x, y = (ass.W - w) / 2, cy - h / 2
         self.card(t0, t1, x, y, w, h)
@@ -234,9 +236,10 @@ class G:
                                      for t, hl in wd) for wd in ln)
             self.lines.append(ass.dialogue(t0, t1, f"{{{self.anim(ass.W / 2, ly, an=5)}\\fn{self.b['fonts']['strong']}"
                                            f"\\fs{size}\\bord0\\shad0}}" + parts, "G", 4))
-        if tr:
-            ty = y + 38 + lh * len(lines) + tr_size * 0.85
-            self.text(t0, t1, ass.W / 2, ty, tr, tr_size, "muted", "body", delay=0.2, layer=4)
+        for k, line in enumerate(tr_lines):
+            ty = y + 38 + lh * len(lines) + tr_size * 0.5 + tr_lh * k + tr_lh / 2
+            self.text(t0, t1, ass.W / 2, ty, line, tr_size, self.g.get("translation_color", "muted"), "body",
+                      delay=0.2, layer=4)
 
     def title(self, t0, t1, gr):
         L = self.b["layout"]

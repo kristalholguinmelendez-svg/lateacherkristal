@@ -11,7 +11,26 @@
     "changes",
     "mind"
   ],
-  "approved_terms": [],
+  "approved_terms": [
+    "a",
+    "cambie",
+    "cambié",
+    "de",
+    "ella",
+    "espero",
+    "ir",
+    "la",
+    "lejos",
+    "no",
+    "opinión",
+    "pizza",
+    "que",
+    "quiero",
+    "sobre",
+    "tacos",
+    "tan",
+    "universidad"
+  ],
   "transcript_fixes": {},
   "captions": {
     "enabled": true,
@@ -23,6 +42,9 @@
         "e": 14.1,
         "lang": "en"
       }
+    ],
+    "hide_during": [
+      "example"
     ]
   },
   "audio": {
@@ -136,22 +158,25 @@
       "pulse": [
         2.53
       ],
-      "y": 0.115,
-      "sub_size": 54
+      "y": 0.085,
+      "sub_size": 48,
+      "size": 76
     },
     {
       "type": "example",
       "src": "A",
       "start": 5.24,
       "end": 8.9,
-      "text": "I [changed my mind]. I don't want pizza, I want tacos."
+      "text": "I [changed my mind]. I don't want pizza, I want tacos.",
+      "translation": "Cambié de opinión. No quiero pizza, quiero tacos."
     },
     {
       "type": "example",
       "src": "A",
       "start": 9.43,
       "end": 14.3,
-      "text": "I hope she [changes her mind] about going to college that far away."
+      "text": "I hope she [changes her mind] about going to college that far away.",
+      "translation": "Espero que ella cambie de opinión sobre ir a la universidad tan lejos."
     }
   ],
   "audio_hints": {
@@ -222,7 +247,10 @@
       "highlight_text": "red",
       "marker_alpha": 0,
       "in_ms": 160,
-      "out_ms": 120
+      "out_ms": 120,
+      "translation_color": "red",
+      "translation_scale": 0.84,
+      "example_size": 56
     },
     "captions": {
       "plate": {
@@ -241,9 +269,14 @@
       "pop_ms": 80
     },
     "framing": {
-      "punch": 0.12,
+      "punch": 0.08,
       "punch_in_ms": 170,
-      "punch_out_ms": 320
+      "punch_out_ms": 320,
+      "medium": 1.08,
+      "close": 1.16
+    },
+    "layout": {
+      "graphics_center_y": 0.715
     }
   },
   "sfx": {

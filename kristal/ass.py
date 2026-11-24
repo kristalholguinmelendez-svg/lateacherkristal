@@ -141,3 +141,17 @@ def wrap(brand: dict, font_key: str, size: int, words: list[str], max_w: float) 
     if cur:
         lines.append(cur)
     return lines
+
+
+def wrap_balanced(brand: dict, font_key: str, size: int, words: list[str], max_w: float) -> list[list[str]]:
+    """Same number of lines as greedy wrapping, but as even as possible (no orphan last word)."""
+    lines = wrap(brand, font_key, size, words, max_w)
+    if len(lines) < 2:
+        return lines
+    limit = text_width(brand, font_key, size, " ".join(words)) / len(lines)
+    while limit < max_w:
+        cand = wrap(brand, font_key, size, words, limit)
+        if len(cand) == len(lines):
+            return cand
+        limit += 10
+    return lines
