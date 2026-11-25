@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      /* La Teacher Kristal — identidad visual fija */
+      :root {
+        --ltk-black: #000000;
+        --ltk-red: #ff0000;
+        --ltk-outline: #ffffff;
+        --ltk-font: "Montserrat", sans-serif;
+        --ltk-cam-top: 200px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ltk-black);
+      }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; }
+      #bg { position: absolute; inset: 0; background: var(--ltk-black); }
+      #cam {
+        position: absolute;
+        left: 0;
+        top: var(--ltk-cam-top);
+        width: 1080px;
+        height: 1920px;
+        z-index: 2;
+      }
+      #cam video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+      }
+      #lesson, #subs { z-index: 5; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="22.0"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="bg"></div>
+
+      <!-- Cámara: 4 tomas (cortes en silencios). data-media-start = punto de entrada en el original -->
+      <div id="cam" data-layout-allow-overflow>
+        <video id="take1" class="clip" src="assets/cam.mp4" data-start="0" data-duration="5.22" data-media-start="0" data-has-audio="true" data-track-index="0" playsinline></video>
+        <video id="take2" class="clip" src="assets/cam.mp4" data-start="5.22" data-duration="1.90" data-media-start="5.55" data-has-audio="true" data-track-index="0" playsinline></video>
+        <video id="take3" class="clip" src="assets/cam.mp4" data-start="7.12" data-duration="13.10" data-media-start="7.88" data-has-audio="true" data-track-index="0" playsinline></video>
+        <video id="take4" class="clip" src="assets/cam.mp4" data-start="20.22" data-duration="1.78" data-media-start="21.15" data-has-audio="true" data-track-index="0" playsinline></video>
+      </div>
+
+      <div
+        id="lesson"
+        data-composition-id="lesson"
+        data-composition-src="compositions/lesson.html"
+        data-start="0"
+        data-duration="22.0"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+
+      <div
+        id="subs"
+        data-composition-id="subs"
+        data-composition-src="compositions/subs.html"
+        data-start="0"
+        data-duration="22.0"
+        data-track-index="2"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+
+      <!-- Efectos de sonido discretos, siempre en silencios -->
+      <audio id="sfx-whoosh" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="4.95" data-duration="0.42" data-volume="0.16" data-fade-out="0.12" data-track-index="3"></audio>
+      <audio id="sfx-pop1" class="clip" src="assets/sfx/pop.mp3" data-start="7.12" data-duration="0.2" data-volume="0.18" data-fade-out="0.06" data-track-index="3"></audio>
+      <audio id="sfx-pop2" class="clip" src="assets/sfx/pop.mp3" data-start="12.42" data-duration="0.2" data-volume="0.18" data-fade-out="0.06" data-track-index="3"></audio>
+    </div>
+    <script>
+      // Zooms de cámara (punch-ins 105–112 %). Los textos viven en otras capas y nunca se mueven.
+      const tl = gsap.timeline({ paused: true });
+      const O = { transformOrigin: "50% 39%" };
+      tl.fromTo("#cam", { scale: 1, ...O }, { scale: 1.05, duration: 5.2, ease: "none" }, 0);
+      tl.set("#cam", { scale: 1.12 }, 5.22);                         // corte + punch-in: "Worried sick"
+      tl.set("#cam", { scale: 1.0 }, 7.12);                          // corte + zoom-out: ejemplo 1
+      tl.to("#cam", { scale: 1.03, duration: 2.9, ease: "none" }, 7.12);
+      tl.to("#cam", { scale: 1.07, duration: 0.22, ease: "power3.out" }, 10.05); // traducción 1
+      tl.set("#cam", { scale: 1.0 }, 12.45);                         // ejemplo 2
+      tl.to("#cam", { scale: 1.10, duration: 0.2, ease: "power3.out" }, 12.80);  // "worried sick"
+      tl.to("#cam", { scale: 1.04, duration: 0.8, ease: "power2.inOut" }, 13.9);
+      tl.to("#cam", { scale: 1.07, duration: 0.22, ease: "power3.out" }, 16.72); // traducción 2
+      tl.set("#cam", { scale: 1.08 }, 20.22);                        // corte + cierre
+      tl.to("#cam", { scale: 1.11, duration: 1.7, ease: "none" }, 20.22);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

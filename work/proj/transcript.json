@@ -1,0 +1,254 @@
+[
+  {
+    "text": "¿Cómo",
+    "start": 0,
+    "end": 0.39,
+    "id": "w0"
+  },
+  {
+    "text": "se",
+    "start": 0.47,
+    "end": 0.63,
+    "id": "w1"
+  },
+  {
+    "text": "dice",
+    "start": 0.63,
+    "end": 1,
+    "id": "w2"
+  },
+  {
+    "text": "angustiado",
+    "start": 1,
+    "end": 1.89,
+    "id": "w3"
+  },
+  {
+    "text": "o",
+    "start": 1.91,
+    "end": 1.99,
+    "id": "w4"
+  },
+  {
+    "text": "extremadamente",
+    "start": 1.99,
+    "end": 3.25,
+    "id": "w5"
+  },
+  {
+    "text": "preocupado",
+    "start": 3.25,
+    "end": 4.18,
+    "id": "w6"
+  },
+  {
+    "text": "en",
+    "start": 4.18,
+    "end": 4.26,
+    "id": "w7"
+  },
+  {
+    "text": "inglés?",
+    "start": 4.42,
+    "end": 5.06,
+    "id": "w8"
+  },
+  {
+    "text": "Worried",
+    "start": 5.49,
+    "end": 6.54,
+    "id": "w9"
+  },
+  {
+    "text": "sick.",
+    "start": 6.54,
+    "end": 7.68,
+    "id": "w10"
+  },
+  {
+    "text": "I",
+    "start": 7.68,
+    "end": 7.89,
+    "id": "w11"
+  },
+  {
+    "text": "was",
+    "start": 7.89,
+    "end": 8.07,
+    "id": "w12"
+  },
+  {
+    "text": "worried",
+    "start": 8.15,
+    "end": 8.93,
+    "id": "w13"
+  },
+  {
+    "text": "sick",
+    "start": 8.93,
+    "end": 9.38,
+    "id": "w14"
+  },
+  {
+    "text": "about",
+    "start": 9.38,
+    "end": 9.88,
+    "id": "w15"
+  },
+  {
+    "text": "you.",
+    "start": 10.01,
+    "end": 10.66,
+    "id": "w16"
+  },
+  {
+    "text": "Estaba",
+    "start": 10.87,
+    "end": 11.05,
+    "id": "w17"
+  },
+  {
+    "text": "extremadamente",
+    "start": 11.13,
+    "end": 11.93,
+    "id": "w18"
+  },
+  {
+    "text": "preocupada",
+    "start": 12.15,
+    "end": 12.87,
+    "id": "w19"
+  },
+  {
+    "text": "por",
+    "start": 12.87,
+    "end": 13.07,
+    "id": "w20"
+  },
+  {
+    "text": "ti.",
+    "start": 13.18,
+    "end": 13.28,
+    "id": "w21"
+  },
+  {
+    "text": "She",
+    "start": 13.49,
+    "end": 13.63,
+    "id": "w22"
+  },
+  {
+    "text": "was",
+    "start": 13.63,
+    "end": 13.97,
+    "id": "w23"
+  },
+  {
+    "text": "worried",
+    "start": 13.97,
+    "end": 14.8,
+    "id": "w24"
+  },
+  {
+    "text": "sick",
+    "start": 14.8,
+    "end": 15.28,
+    "id": "w25"
+  },
+  {
+    "text": "when",
+    "start": 15.28,
+    "end": 15.49,
+    "id": "w26"
+  },
+  {
+    "text": "I",
+    "start": 15.61,
+    "end": 15.64,
+    "id": "w27"
+  },
+  {
+    "text": "didn't",
+    "start": 15.64,
+    "end": 16.07,
+    "id": "w28"
+  },
+  {
+    "text": "come",
+    "start": 16.07,
+    "end": 16.36,
+    "id": "w29"
+  },
+  {
+    "text": "home",
+    "start": 16.36,
+    "end": 16.65,
+    "id": "w30"
+  },
+  {
+    "text": "last",
+    "start": 16.65,
+    "end": 16.93,
+    "id": "w31"
+  },
+  {
+    "text": "night.",
+    "start": 17.02,
+    "end": 17.53,
+    "id": "w32"
+  },
+  {
+    "text": "Ella",
+    "start": 17.75,
+    "end": 17.91,
+    "id": "w33"
+  },
+  {
+    "text": "estaba",
+    "start": 17.91,
+    "end": 18.36,
+    "id": "w34"
+  },
+  {
+    "text": "angustiada",
+    "start": 18.52,
+    "end": 19.4,
+    "id": "w35"
+  },
+  {
+    "text": "cuando",
+    "start": 19.4,
+    "end": 19.75,
+    "id": "w36"
+  },
+  {
+    "text": "no",
+    "start": 19.87,
+    "end": 19.94,
+    "id": "w37"
+  },
+  {
+    "text": "llegué",
+    "start": 20.06,
+    "end": 20.34,
+    "id": "w38"
+  },
+  {
+    "text": "anoche.¿Comprendo,",
+    "start": 20.34,
+    "end": 22.06,
+    "id": "w39"
+  },
+  {
+    "text": "mi",
+    "start": 22.06,
+    "end": 22.24,
+    "id": "w40"
+  },
+  {
+    "text": "amigo?",
+    "start": 22.24,
+    "end": 22.98,
+    "id": "w41"
+  }
+]

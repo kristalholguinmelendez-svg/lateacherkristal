@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "historyId": "afb80a06-2e00-4649-b270-148dce942add",
+  "currentRevision": "f70c233c-db20-4710-9e51-7b91f3358341",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "assets/sfx/CREDITS.md": {
+      "hash": "79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/79/79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce"
+    },
+    "assets/sfx/click-soft.mp3": {
+      "hash": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/07/075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
+    },
+    "assets/sfx/pop.mp3": {
+      "hash": "19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/19/19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352"
+    },
+    "assets/sfx/whoosh-short.mp3": {
+      "hash": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    "compositions/lesson.html": {
+      "hash": "a7c3cfb6b679a45678e9386f63627c32fe3c5e8618e3a9aa0c27a6ca305e0ee6",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/a7/a7c3cfb6b679a45678e9386f63627c32fe3c5e8618e3a9aa0c27a6ca305e0ee6"
+    },
+    "compositions/subs.html": {
+      "hash": "28b2c731f4dcd87281900825d627171e301f7b0eb6a356c1f10429630c108dc0",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/28/28b2c731f4dcd87281900825d627171e301f7b0eb6a356c1f10429630c108dc0"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "c0622024aeb598119756a190140751d2d1075e7e86e7e521bd6fd4393195075d",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/c0/c0622024aeb598119756a190140751d2d1075e7e86e7e521bd6fd4393195075d"
+    },
+    "meta.json": {
+      "hash": "2dc1b80dbc07fa511d655852e0bf515518f1d2d62b9987f41056ae91b0f1bdbe",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/2d/2dc1b80dbc07fa511d655852e0bf515518f1d2d62b9987f41056ae91b0f1bdbe"
+    },
+    "package.json": {
+      "hash": "56e386bb64ba400b48fa1ce759c9007a9b81265be3099bbcbbdc8e964ca02890",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/56/56e386bb64ba400b48fa1ce759c9007a9b81265be3099bbcbbdc8e964ca02890"
+    },
+    "assets/cam.mp4": {
+      "hash": "4ba7f7378217a53c6359269c3d205bc25f0ea264f402fbcc86ce602fb245ad21",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/4b/4ba7f7378217a53c6359269c3d205bc25f0ea264f402fbcc86ce602fb245ad21"
+    }
+  },
+  "revisions": {
+    "f70c233c-db20-4710-9e51-7b91f3358341": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795647394493,
+      "endedAt": 1795647394497,
+      "files": {
+        "compositions/lesson.html": {
+          "before": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/e7/e7f7a2e7d63cf59dd7b9c527ca6816ed1f9709ccedba24e8a6fc89dca7fe98c8",
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/a7/a7c3cfb6b679a45678e9386f63627c32fe3c5e8618e3a9aa0c27a6ca305e0ee6"
+        },
+        "compositions/subs.html": {
+          "before": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/0e/0e8d9c52333100983e7c999a303ffceb23197503f881943b0c402a515cff2d79",
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/28/28b2c731f4dcd87281900825d627171e301f7b0eb6a356c1f10429630c108dc0"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "8c0f4a04-39a9-4695-a0f0-6b86ba8c6e92"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "8c0f4a04-39a9-4695-a0f0-6b86ba8c6e92",
+        "scope": "project",
+        "report": "/home/user/lateacherkristal/work/proj/.hyperframes/artifacts/checks/8c0f4a04-39a9-4695-a0f0-6b86ba8c6e92.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795647352792,
+        "contentHash": "4a62bbaa7a267f7b26ce094976707749268d0da4b59783fd09b51769d15b716b",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "9a411092-9c44-418f-879f-7e308d9ac095-7"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-0",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "5c8d9f6c2eb3fa9ff092163aac8b47e4585419774da64c1a675bf7959ed65588",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-1",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-01-at-3s.png",
+        "time": 3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "cc5bcc57fa9fdfa749faad4b3cb4ee504ff6a893bd0745b3b6a269b8185e1944",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-2",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-02-at-6s.png",
+        "time": 6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "4c7d746f932ca54d5a71e25bb461b703297ab9eb5b3f4ab3aad276256cde072d",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-3",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-03-at-9s.png",
+        "time": 9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "b228e27b83b4082e265123f0f40e0f09b435ae948988c4f891dcbabf565afc35",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-4",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-04-at-11s.png",
+        "time": 11,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "f6d2b59178b525a5d31391c019c7cd2b597f7a06f90587a4dd6e0063fb234514",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-5",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-05-at-13.2s.png",
+        "time": 13.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "6a93fd56552c5e0eba134cf7b81f908a2e036115663363d9527e09f45e25356e",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-6",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-06-at-18.5s.png",
+        "time": 18.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "6630a18cf3b6e44d0f727c7e1b69de2b5b8734aea593a47592714789dbb49f70",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8aaf66b-94c1-4110-902f-a48397416252-7",
+        "image": "/home/user/lateacherkristal/work/snaps/frame-07-at-21.2s.png",
+        "time": 21.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647370568,
+        "contentHash": "c40053c62bfd82b47f7c89092de2b3ee76d0f7a698c957b1db649b008058899c",
+        "revision": null,
+        "inputFingerprint": "633e4bb132fc7e3a327af8b824df564357dd8a8f1bfacb4b4cf084cc791c8d17",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-0",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406451,
+        "contentHash": "3c7a70027047250b2c0b94cd1e7123b472ea1108049a2caa289f219b3df69ef8",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-1",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-01-at-3s.png",
+        "time": 3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "415ba630b56f0235b62cc36ea1dafdc8e934dff92b97d2508fafa5f3510aa423",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-2",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-02-at-6s.png",
+        "time": 6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "55663397be1a9f785739629348fcd9bc72bff233c5ec4e85e28f035edd6622b7",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-3",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-03-at-9s.png",
+        "time": 9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "201ce596942950016e31a41832fb99fa090a97c09ba3f9cd2e2c03af23fae988",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-4",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-04-at-11s.png",
+        "time": 11,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "2211f893871ab680714638b95a906cf70d32695b7a715dca88026a025581c231",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-5",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-05-at-13.2s.png",
+        "time": 13.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "85bee4921c67f2331486a000ac67607917350978acac00071f00b9c1d95db540",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-6",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-06-at-18.5s.png",
+        "time": 18.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "a1ab5b5269064666fffc2b03f3b3361306487496d07bc24b336ab6e195648edf",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9a411092-9c44-418f-879f-7e308d9ac095-7",
+        "image": "/home/user/lateacherkristal/work/proj/boards/stills/frame-07-at-21.2s.png",
+        "time": 21.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795647406452,
+        "contentHash": "41248737ede00f20bde005e197d23bdef8430b7b3e27957983e11ecb05680abb",
+        "revision": null,
+        "inputFingerprint": "b39b3bd7d1f0f5665ec01f8f045d46f570c7c029e8d665ad2124bbf262f5c073",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

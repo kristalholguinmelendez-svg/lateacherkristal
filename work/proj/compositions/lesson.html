@@ -1,0 +1,82 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: var(--ltk-font, "Montserrat", sans-serif); }
+    /* Recuadro superior: frase principal, visible desde 00:00.000, sin animación */
+    #ls-header {
+      position: absolute;
+      left: 0; top: 0;
+      width: 1080px; height: 500px;
+      background: #000000;
+      display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+      padding-bottom: 34px;
+    }
+    #ls-phrase {
+      color: #ff0000;
+      font-weight: 800;
+      font-size: 112px;
+      line-height: 1;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+    }
+    #ls-meaning {
+      margin-top: 18px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 1.15;
+      color: #000000;
+      -webkit-text-stroke: 5.5px #ffffff;
+      paint-order: stroke fill;
+    }
+    /* Tarjetas de ejemplo: completas, fijas, sin movimiento */
+    .ls-ex {
+      position: absolute;
+      left: 80px; top: 1385px;
+      width: 840px;
+      background: #000000;
+      border-radius: 18px;
+      padding: 30px 36px 32px;
+    }
+    .ls-en {
+      font-weight: 800;
+      font-size: 56px;
+      line-height: 1.14;
+      color: #000000;
+      -webkit-text-stroke: 6px #ffffff;
+      paint-order: stroke fill;
+    }
+    .ls-es {
+      margin-top: 18px;
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 1.16;
+      color: #000000;
+      -webkit-text-stroke: 5.5px #ffffff;
+      paint-order: stroke fill;
+    }
+    .hl { color: #ff0000; -webkit-text-stroke: 0; }
+    #ls-icon { position: absolute; left: 780px; top: 1260px; width: 150px; height: 150px; }
+  </style>
+  <div id="root" data-composition-id="lesson" data-width="1080" data-height="1920">
+    <div id="ls-header">
+      <div id="ls-phrase">Worried sick</div>
+      <div id="ls-meaning">angustiado / extremadamente<br />preocupado</div>
+    </div>
+
+    <!-- Ejemplo 1: aparece al iniciar "I was…" (corte 7.12) y se queda hasta el ejemplo 2 -->
+    <div id="ls-ex1" class="clip ls-ex" data-start="7.12" data-duration="5.33" data-track-index="0">
+      <div class="ls-en">I was <span class="hl">worried sick</span> about you.</div>
+      <div id="ls-ex1-es" class="clip ls-es" data-start="10.05" data-duration="2.40" data-track-index="1">Estaba <span class="hl">extremadamente preocupada</span> por ti.</div>
+    </div>
+
+    <!-- Ejemplo 2: aparece al iniciar "She was…" y se mantiene hasta el final -->
+    <div id="ls-ex2" class="clip ls-ex" data-start="12.45" data-duration="9.55" data-track-index="0">
+      <div class="ls-en">She was <span class="hl">worried sick</span> when I didn't come home last night.</div>
+      <div id="ls-ex2-es" class="clip ls-es" data-start="16.72" data-duration="5.28" data-track-index="1">Ella estaba <span class="hl">angustiada</span> cuando no llegué anoche.</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    window.__timelines["lesson"] = tl;
+  </script>
+</template>

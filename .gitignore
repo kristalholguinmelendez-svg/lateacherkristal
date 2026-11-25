@@ -1,0 +1,12 @@
+# Medios pesados: no se suben a git
+work/src/
+work/chk/
+work/snaps/
+work/check.json
+work/err.log
+work/tr.json
+work/proj/assets/cam.mp4
+work/proj/renders/
+work/proj/boards/stills/*.png
+work/proj/boards/stills/contact-sheet.jpg
+node_modules/
