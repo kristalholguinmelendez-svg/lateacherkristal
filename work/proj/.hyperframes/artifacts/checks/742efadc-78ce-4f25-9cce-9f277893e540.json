@@ -46,39 +46,61 @@
   "runtime": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 0,
+    "warningCount": 1,
     "infoCount": 0,
-    "findings": []
+    "findings": [
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"music\" is 21.92s but its slot (data-duration) is 22.00s — the slot is shortened to the media length when rendered. Set data-duration to ~21.92s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "22.0",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      }
+    ]
   },
   "layout": {
     "ok": true,
     "errorCount": 0,
     "warningCount": 9,
-    "infoCount": 0,
+    "infoCount": 1,
     "findings": [
       {
         "selector": "#ls-phrase",
         "dataAttributes": {},
         "sourceFile": "compositions/lesson.html",
         "bbox": {
-          "x": 99.41,
-          "y": 232,
-          "width": 881.18,
-          "height": 136
+          "x": 164.06,
+          "y": 257,
+          "width": 751.88,
+          "height": 117
         },
         "time": 1.222,
         "rect": {
-          "left": 99.41,
-          "top": 232,
-          "right": 980.59,
-          "bottom": 368,
-          "width": 881.18,
-          "height": 136
+          "left": 164.06,
+          "top": 257,
+          "right": 915.94,
+          "bottom": 374,
+          "width": 751.88,
+          "height": 117
         },
         "code": "outside_safe_zone",
         "severity": "warning",
         "text": "Worried sick",
-        "message": "<div> \"Worried sick\" is outside the safe area: TikTok (left and top and right edges), Instagram Reels (top edge), YouTube Shorts (top and right edges).",
+        "message": "<div> \"Worried sick\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top and right edges).",
         "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
         "firstSeen": 1.222,
         "lastSeen": 20.778,
@@ -106,16 +128,16 @@
         "sourceFile": "compositions/subs.html",
         "bbox": {
           "x": 283.28,
-          "y": 1432,
+          "y": 1297,
           "width": 433.44,
           "height": 76
         },
         "time": 1.222,
         "rect": {
           "left": 283.28,
-          "top": 1432,
+          "top": 1297,
           "right": 716.72,
-          "bottom": 1508,
+          "bottom": 1373,
           "width": 433.44,
           "height": 76
         },
@@ -142,16 +164,16 @@
         "sourceFile": "compositions/subs.html",
         "bbox": {
           "x": 213.55,
-          "y": 1432,
+          "y": 1297,
           "width": 572.89,
           "height": 145.44
         },
         "time": 3.667,
         "rect": {
           "left": 213.55,
-          "top": 1432,
+          "top": 1297,
           "right": 786.44,
-          "bottom": 1577.44,
+          "bottom": 1442.44,
           "width": 572.89,
           "height": 145.44
         },
@@ -178,16 +200,16 @@
         "sourceFile": "compositions/subs.html",
         "bbox": {
           "x": 281.36,
-          "y": 1432,
+          "y": 1297,
           "width": 437.27,
           "height": 76
         },
         "time": 6.111,
         "rect": {
           "left": 281.36,
-          "top": 1432,
+          "top": 1297,
           "right": 718.63,
-          "bottom": 1508,
+          "bottom": 1373,
           "width": 437.27,
           "height": 76
         },
@@ -210,16 +232,16 @@
         "sourceFile": "compositions/lesson.html",
         "bbox": {
           "x": 116,
-          "y": 1412,
+          "y": 1277,
           "width": 729.22,
           "height": 131.83
         },
         "time": 8.556,
         "rect": {
           "left": 116,
-          "top": 1412,
+          "top": 1277,
           "right": 845.22,
-          "bottom": 1543.83,
+          "bottom": 1408.83,
           "width": 729.22,
           "height": 131.83
         },
@@ -247,16 +269,16 @@
         "sourceFile": "compositions/lesson.html",
         "bbox": {
           "x": 116,
-          "y": 1558.66,
+          "y": 1423.66,
           "width": 550.98,
           "height": 100.72
         },
         "time": 11,
         "rect": {
           "left": 116,
-          "top": 1558.66,
+          "top": 1423.66,
           "right": 666.98,
-          "bottom": 1659.38,
+          "bottom": 1524.38,
           "width": 550.98,
           "height": 100.72
         },
@@ -279,16 +301,16 @@
         "sourceFile": "compositions/lesson.html",
         "bbox": {
           "x": 116,
-          "y": 1412,
+          "y": 1277,
           "width": 762.38,
           "height": 195.66
         },
         "time": 13.444,
         "rect": {
           "left": 116,
-          "top": 1412,
+          "top": 1277,
           "right": 878.38,
-          "bottom": 1607.66,
+          "bottom": 1472.66,
           "width": 762.38,
           "height": 195.66
         },
@@ -318,16 +340,16 @@
         "sourceFile": "compositions/lesson.html",
         "bbox": {
           "x": 116,
-          "y": 1622.48,
+          "y": 1487.48,
           "width": 756.16,
           "height": 100.72
         },
         "time": 18.333,
         "rect": {
           "left": 116,
-          "top": 1622.48,
+          "top": 1487.48,
           "right": 872.16,
-          "bottom": 1723.2,
+          "bottom": 1588.2,
           "width": 756.16,
           "height": 100.72
         },
@@ -356,16 +378,16 @@
         "sourceFile": "compositions/subs.html",
         "bbox": {
           "x": 215.66,
-          "y": 1779,
+          "y": 1647,
           "width": 568.67,
           "height": 54
         },
         "time": 20.778,
         "rect": {
           "left": 215.66,
-          "top": 1779,
+          "top": 1647,
           "right": 784.33,
-          "bottom": 1833,
+          "bottom": 1701,
           "width": 568.67,
           "height": 54
         },
@@ -380,6 +402,47 @@
         "heldMs": 0,
         "times": [
           20.778
+        ]
+      },
+      {
+        "code": "text_over_face",
+        "severity": "info",
+        "time": 6.111,
+        "selector": "#ls-phrase",
+        "containerSelector": "#take2",
+        "text": "Worried sick",
+        "message": "\"Worried sick\" covers 9% of a face in the video beneath it.",
+        "rect": {
+          "left": 164.06,
+          "top": 257,
+          "right": 915.94,
+          "bottom": 374,
+          "width": 751.88,
+          "height": 117
+        },
+        "coveredFraction": 0.09,
+        "faceRect": {
+          "x": 117.9,
+          "y": 197.53,
+          "width": 962.1,
+          "height": 965.54
+        },
+        "fixHint": "Move the text off the face, or mark an intended overlap with data-layout-allow-on-face.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/lesson.html",
+        "bbox": {
+          "x": 164.06,
+          "y": 257,
+          "width": 751.88,
+          "height": 117
+        },
+        "firstSeen": 6.111,
+        "lastSeen": 15.889,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.111,
+          15.889
         ]
       }
     ],
@@ -398,7 +461,7 @@
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
     "tolerance": 2,
-    "totalIssueCount": 9,
+    "totalIssueCount": 10,
     "truncated": false,
     "faceCheck": {
       "ran": true,

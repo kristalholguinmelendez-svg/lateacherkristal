@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "afb80a06-2e00-4649-b270-148dce942add",
-  "currentRevision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
+  "currentRevision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -29,20 +29,20 @@
       "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/lesson.html": {
-      "hash": "326e23fa4899a4878509cfd16223620a2d7445c1410a4e663ef5d4b5543cdb00",
-      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/32/326e23fa4899a4878509cfd16223620a2d7445c1410a4e663ef5d4b5543cdb00"
+      "hash": "6edb7496e5eb84576c159d47396366715d35c4157cca69128897e4d97f21df20",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/6e/6edb7496e5eb84576c159d47396366715d35c4157cca69128897e4d97f21df20"
     },
     "compositions/subs.html": {
-      "hash": "c8454d3f63e69f848f3ca551c17be33cf260ec5693a86cfcc4e563b88dc979e1",
-      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/c8/c8454d3f63e69f848f3ca551c17be33cf260ec5693a86cfcc4e563b88dc979e1"
+      "hash": "28ab61ebbddb9b3bd9b2283dca7f25d29eaf7d7e224308494eb66e9b307e9343",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/28/28ab61ebbddb9b3bd9b2283dca7f25d29eaf7d7e224308494eb66e9b307e9343"
     },
     "hyperframes.json": {
       "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
       "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
     },
     "index.html": {
-      "hash": "2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d",
-      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/2a/2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d"
+      "hash": "69e7837ca581248fee117f09866157c937587828da0632da9436d9eed1368db5",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/69/69e7837ca581248fee117f09866157c937587828da0632da9436d9eed1368db5"
     },
     "meta.json": {
       "hash": "2dc1b80dbc07fa511d655852e0bf515518f1d2d62b9987f41056ae91b0f1bdbe",
@@ -305,12 +305,35 @@
           "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/2a/2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d"
         }
       }
+    },
+    "94e305c3-e186-4013-b223-e2cb80bab9f6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795648672534,
+      "endedAt": 1795648672538,
+      "files": {
+        "compositions/lesson.html": {
+          "before": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/32/326e23fa4899a4878509cfd16223620a2d7445c1410a4e663ef5d4b5543cdb00",
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/6e/6edb7496e5eb84576c159d47396366715d35c4157cca69128897e4d97f21df20"
+        },
+        "compositions/subs.html": {
+          "before": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/c8/c8454d3f63e69f848f3ca551c17be33cf260ec5693a86cfcc4e563b88dc979e1",
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/28/28ab61ebbddb9b3bd9b2283dca7f25d29eaf7d7e224308494eb66e9b307e9343"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/2a/2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d",
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/69/69e7837ca581248fee117f09866157c937587828da0632da9436d9eed1368db5"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
-      "id": "888e8715-c403-4972-9ab6-1454f1f673c8"
+      "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+      "id": "742efadc-78ce-4f25-9cce-9f277893e540"
     },
     "revisions": {
       "f6a8e265-6641-46e7-81e8-eea4dc3518c6": [
@@ -355,7 +378,6 @@
         {
           "id": "37e96e24-7d74-4858-a467-a2f55319dae6",
           "scope": "project",
-          "report": "/home/user/lateacherkristal/work/proj/.hyperframes/artifacts/checks/37e96e24-7d74-4858-a467-a2f55319dae6.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -385,7 +407,9 @@
           "revision": "01235089-8b17-429c-8faf-7938df942afa",
           "inputFingerprint": "c8aff202f510665b8918a0e5217d3161d6629beb9c91105657a338aa4cebf3c1",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "27f80ee5-2775-4c8c-911d-7e1e0a7d30b7"
         }
       ],
       "2db82027-8b94-43d0-b003-34dbb9d3cf9a": [
@@ -421,6 +445,43 @@
           "contentHash": "d5d6639dc62426ea245b87d0fed6d9f574e14ce2e4bcda3257fbd2337393e39c",
           "revision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
           "inputFingerprint": "4905afb182079ba6ace546d63c571f829a6daa04191e758b0ddfed763ea396b6",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "94e305c3-e186-4013-b223-e2cb80bab9f6": [
+        {
+          "id": "742efadc-78ce-4f25-9cce-9f277893e540",
+          "scope": "project",
+          "report": "/home/user/lateacherkristal/work/proj/.hyperframes/artifacts/checks/742efadc-78ce-4f25-9cce-9f277893e540.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795648714925,
+          "contentHash": "a4e059260afd0f329c25e6ed72a217d93d7bea42b16dcc8790062040f949a553",
+          "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+          "inputFingerprint": "bb1245a84142d9e2e639904d46ff5959a4cf93c99e9dd494a3324953a991a4c0",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
@@ -466,8 +527,8 @@
   },
   "snapshots": {
     "latest": {
-      "revision": "01235089-8b17-429c-8faf-7938df942afa",
-      "id": "5706eb73-10ae-4db4-9904-ee92c027a87b-0"
+      "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+      "id": "bd4e6f23-f502-445d-a2b8-1acbf2a87d45-4"
     },
     "revisions": {
       "01235089-8b17-429c-8faf-7938df942afa": [
@@ -488,6 +549,108 @@
           "contentHash": "20ba2d4f0cbd8bd7deb9548fa156544e7abd1a4d09f8a0738653c209ba67f6be",
           "revision": "01235089-8b17-429c-8faf-7938df942afa",
           "inputFingerprint": "c8aff202f510665b8918a0e5217d3161d6629beb9c91105657a338aa4cebf3c1",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "94e305c3-e186-4013-b223-e2cb80bab9f6": [
+        {
+          "scope": "full",
+          "id": "bd4e6f23-f502-445d-a2b8-1acbf2a87d45-0",
+          "image": "/home/user/lateacherkristal/work/snaps3/frame-00-at-0s.png",
+          "time": 0,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795648681028,
+          "contentHash": "c09eaf6943ae2376fee89cc84a8b4b2f43bdfaef81c1aa3447dd3fc3842058cd",
+          "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+          "inputFingerprint": "bb1245a84142d9e2e639904d46ff5959a4cf93c99e9dd494a3324953a991a4c0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "bd4e6f23-f502-445d-a2b8-1acbf2a87d45-1",
+          "image": "/home/user/lateacherkristal/work/snaps3/frame-01-at-6s.png",
+          "time": 6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795648681028,
+          "contentHash": "26c42fe982b4f2cd578056cd9c67df085dec127d37b86b3e339a9f1bd5bc79cf",
+          "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+          "inputFingerprint": "bb1245a84142d9e2e639904d46ff5959a4cf93c99e9dd494a3324953a991a4c0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "bd4e6f23-f502-445d-a2b8-1acbf2a87d45-2",
+          "image": "/home/user/lateacherkristal/work/snaps3/frame-02-at-9s.png",
+          "time": 9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795648681028,
+          "contentHash": "8690d7b3b9d9502a04611cd03d00de5d78ec43d4e45e8917e0e0bb5aff9c0717",
+          "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+          "inputFingerprint": "bb1245a84142d9e2e639904d46ff5959a4cf93c99e9dd494a3324953a991a4c0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "bd4e6f23-f502-445d-a2b8-1acbf2a87d45-3",
+          "image": "/home/user/lateacherkristal/work/snaps3/frame-03-at-13.2s.png",
+          "time": 13.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795648681028,
+          "contentHash": "01f5b696d239772df49fe6c7759eb079470e6d9a197e3c86c58eb614163f747d",
+          "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+          "inputFingerprint": "bb1245a84142d9e2e639904d46ff5959a4cf93c99e9dd494a3324953a991a4c0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "bd4e6f23-f502-445d-a2b8-1acbf2a87d45-4",
+          "image": "/home/user/lateacherkristal/work/snaps3/frame-04-at-21.2s.png",
+          "time": 21.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795648681028,
+          "contentHash": "dc116476ef582e923cf9f045e11215ba93fe6c191ea6e69ead872475b5ade424",
+          "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6",
+          "inputFingerprint": "bb1245a84142d9e2e639904d46ff5959a4cf93c99e9dd494a3324953a991a4c0",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
@@ -818,15 +981,15 @@
   },
   "renders": {
     "latest": {
-      "id": "283c4e62-ccc6-408b-a407-a763b613ae20",
-      "completedAt": 1795648480446,
-      "output": "/home/user/lateacherkristal/previews/worried-sick-preview-v2.mp4",
+      "id": "27f80ee5-2775-4c8c-911d-7e1e0a7d30b7",
+      "completedAt": 1795648801634,
+      "output": "/home/user/lateacherkristal/previews/worried-sick-preview-v3.mp4",
       "status": "completed",
-      "revision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a"
+      "revision": "94e305c3-e186-4013-b223-e2cb80bab9f6"
     },
     "retainedRevisions": [
-      "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
-      "01235089-8b17-429c-8faf-7938df942afa"
+      "94e305c3-e186-4013-b223-e2cb80bab9f6",
+      "2db82027-8b94-43d0-b003-34dbb9d3cf9a"
     ]
   },
   "pendingArtifactCleanup": []
