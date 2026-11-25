@@ -286,7 +286,6 @@
         {
           "id": "c64c0982-5624-4e50-8495-ff0ab705f9e1",
           "scope": "project",
-          "report": "/home/user/lateacherkristal/work/proj/.hyperframes/artifacts/checks/c64c0982-5624-4e50-8495-ff0ab705f9e1.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -316,7 +315,9 @@
           "revision": "f6a8e265-6641-46e7-81e8-eea4dc3518c6",
           "inputFingerprint": "678f329e00934de9e1737fe170bdb7dcb4b8f17cb5aba86f587a15084edd4ba6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "268ff93b-c8c1-4a3b-bbc9-f2d54f885bec"
         }
       ],
       "01235089-8b17-429c-8faf-7938df942afa": [
@@ -746,5 +747,18 @@
         "attribution": "inputs-changed"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "268ff93b-c8c1-4a3b-bbc9-f2d54f885bec",
+      "completedAt": 1795648231626,
+      "output": "/home/user/lateacherkristal/previews/worried-sick-preview-v1.mp4",
+      "status": "completed",
+      "revision": "01235089-8b17-429c-8faf-7938df942afa"
+    },
+    "retainedRevisions": [
+      "01235089-8b17-429c-8faf-7938df942afa"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }

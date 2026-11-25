@@ -11,3 +11,4 @@ work/proj/boards/stills/*.png
 work/proj/boards/stills/contact-sheet.jpg
 node_modules/
 work/auth.log
+previews/
