@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "afb80a06-2e00-4649-b270-148dce942add",
-  "currentRevision": "01235089-8b17-429c-8faf-7938df942afa",
+  "currentRevision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -41,8 +41,8 @@
       "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
     },
     "index.html": {
-      "hash": "f70bc0924764ab7e4bd3c83dd5e735035f04d8f6fd4772973b36ce268144fd1c",
-      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/f7/f70bc0924764ab7e4bd3c83dd5e735035f04d8f6fd4772973b36ce268144fd1c"
+      "hash": "2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/2a/2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d"
     },
     "meta.json": {
       "hash": "2dc1b80dbc07fa511d655852e0bf515518f1d2d62b9987f41056ae91b0f1bdbe",
@@ -135,6 +135,14 @@
     "transcript.json": {
       "hash": "a2b64cdf6f638efa237f622e2ff28415792d85a1ddf8a8aafef32c59c3ea7e64",
       "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/a2/a2b64cdf6f638efa237f622e2ff28415792d85a1ddf8a8aafef32c59c3ea7e64"
+    },
+    ".media/manifest.jsonl": {
+      "hash": "df72e0c5dcb257ca29afe1170756d69d08c4cdbd59d635f3e397877252d08807",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/df/df72e0c5dcb257ca29afe1170756d69d08c4cdbd59d635f3e397877252d08807"
+    },
+    "assets/bgm/music-bed.m4a": {
+      "hash": "96104bdd76234c834425d423418f9ef7b0718d79d9f2e7b4aec776221c806121",
+      "content": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/96/96104bdd76234c834425d423418f9ef7b0718d79d9f2e7b4aec776221c806121"
     }
   },
   "revisions": {
@@ -274,12 +282,35 @@
           "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/f7/f70bc0924764ab7e4bd3c83dd5e735035f04d8f6fd4772973b36ce268144fd1c"
         }
       }
+    },
+    "2db82027-8b94-43d0-b003-34dbb9d3cf9a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795648379335,
+      "endedAt": 1795648379339,
+      "files": {
+        ".media/manifest.jsonl": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/df/df72e0c5dcb257ca29afe1170756d69d08c4cdbd59d635f3e397877252d08807"
+        },
+        "assets/bgm/music-bed.m4a": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/96/96104bdd76234c834425d423418f9ef7b0718d79d9f2e7b4aec776221c806121"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/f7/f70bc0924764ab7e4bd3c83dd5e735035f04d8f6fd4772973b36ce268144fd1c",
+          "after": "/root/.cache/hyperframes/history/afb80a06-2e00-4649-b270-148dce942add/blobs/2a/2aa860aa02749f744a0907b878100c5ec4761be9e3f89a41352f133edef3c93d"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "01235089-8b17-429c-8faf-7938df942afa",
-      "id": "37e96e24-7d74-4858-a467-a2f55319dae6"
+      "revision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
+      "id": "888e8715-c403-4972-9ab6-1454f1f673c8"
     },
     "revisions": {
       "f6a8e265-6641-46e7-81e8-eea4dc3518c6": [
@@ -353,6 +384,43 @@
           "contentHash": "9a500253507a3d379e2a0541470af5020b5ae97d78fbb50d34cdd6bc7e016b2b",
           "revision": "01235089-8b17-429c-8faf-7938df942afa",
           "inputFingerprint": "c8aff202f510665b8918a0e5217d3161d6629beb9c91105657a338aa4cebf3c1",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "2db82027-8b94-43d0-b003-34dbb9d3cf9a": [
+        {
+          "id": "888e8715-c403-4972-9ab6-1454f1f673c8",
+          "scope": "project",
+          "report": "/home/user/lateacherkristal/work/proj/.hyperframes/artifacts/checks/888e8715-c403-4972-9ab6-1454f1f673c8.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795648395624,
+          "contentHash": "d5d6639dc62426ea245b87d0fed6d9f574e14ce2e4bcda3257fbd2337393e39c",
+          "revision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
+          "inputFingerprint": "4905afb182079ba6ace546d63c571f829a6daa04191e758b0ddfed763ea396b6",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
@@ -750,13 +818,14 @@
   },
   "renders": {
     "latest": {
-      "id": "268ff93b-c8c1-4a3b-bbc9-f2d54f885bec",
-      "completedAt": 1795648231626,
-      "output": "/home/user/lateacherkristal/previews/worried-sick-preview-v1.mp4",
+      "id": "283c4e62-ccc6-408b-a407-a763b613ae20",
+      "completedAt": 1795648480446,
+      "output": "/home/user/lateacherkristal/previews/worried-sick-preview-v2.mp4",
       "status": "completed",
-      "revision": "01235089-8b17-429c-8faf-7938df942afa"
+      "revision": "2db82027-8b94-43d0-b003-34dbb9d3cf9a"
     },
     "retainedRevisions": [
+      "2db82027-8b94-43d0-b003-34dbb9d3cf9a",
       "01235089-8b17-429c-8faf-7938df942afa"
     ]
   },
