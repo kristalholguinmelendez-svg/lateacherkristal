@@ -20,6 +20,9 @@
       -webkit-text-stroke: 6px #ffffff;
       paint-order: stroke fill;
     }
+    /* Cierre: franja compacta bajo la tarjeta del ejemplo 2 (el ejemplo tiene prioridad) */
+    #sb6 { top: 1772px; }
+    #sb6 span.box { font-size: 44px; padding: 10px 24px 14px; border-radius: 12px; -webkit-text-stroke: 5px #ffffff; }
     .sb .hl { color: #ff0000; -webkit-text-stroke: 0; }
   </style>
   <div id="root" data-composition-id="subs" data-width="1080" data-height="1920">
@@ -28,6 +31,7 @@
     <div id="sb3" class="clip sb" data-start="2.17" data-duration="2.08" data-track-index="0"><span class="box">extremadamente preocupado</span></div>
     <div id="sb4" class="clip sb" data-start="4.25" data-duration="0.97" data-track-index="0"><span class="box">en inglés?</span></div>
     <div id="sb5" class="clip sb" data-start="5.22" data-duration="1.90" data-track-index="0"><span class="box"><span class="hl">Worried sick.</span></span></div>
+    <div id="sb6" class="clip sb" data-start="20.36" data-duration="1.64" data-track-index="0" data-layout-allow-caption-zone><span class="box">¿Comprendo, mi amigo?</span></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
